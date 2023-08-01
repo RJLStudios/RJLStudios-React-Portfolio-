@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/RJLStudios-React-Portfolio-/static/css/main.7cd4e4a6.css",
+    "main.js": "/RJLStudios-React-Portfolio-/static/js/main.4dd2ff52.js",
+    "static/media/QuattrocentoSans-Regular.ttf": "/RJLStudios-React-Portfolio-/static/media/QuattrocentoSans-Regular.5293b4c9e114a999cd53.ttf",
+    "index.html": "/RJLStudios-React-Portfolio-/index.html",
+    "main.7cd4e4a6.css.map": "/RJLStudios-React-Portfolio-/static/css/main.7cd4e4a6.css.map",
+    "main.4dd2ff52.js.map": "/RJLStudios-React-Portfolio-/static/js/main.4dd2ff52.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cd4e4a6.css",
+    "static/js/main.4dd2ff52.js"
+  ]
+}
