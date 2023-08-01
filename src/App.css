@@ -1,0 +1,486 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Quattro';
+}
+
+html{
+  background-color: #2a2727;
+  overflow: auto;
+}
+
+body{
+  overflow:hidden;
+}
+/*FONT STYLES*/
+
+@font-face {
+  font-family: 'Quattro';
+  src: local('Quattro'),
+  url('./fonts/QuattrocentoSans-Regular.ttf') format('truetype');
+}
+
+/*HEADER STYLES*/
+
+.Navbar {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  padding: 0px 13vw;
+  background-color: black;
+  color: white;
+  width: 100%;
+  position: sticky;
+  
+}
+
+.Header-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  gap: 7vw;
+  list-style-type: none;
+ 
+}
+
+
+.contact-btn {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+/*.Logo {
+
+}*/
+
+
+
+/*HOME SECTION STYLES*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+.Homepage {
+  background-color: black;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  color: white;
+  
+}
+
+.Homepage, .Projects-Card {
+  padding: 0px 13vw;
+}
+.Home-Bio {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.Intro-text {
+  
+  height: 100%;
+  width: 55%;
+  max-width: 700px;
+  padding: 30px 0px;
+}
+
+.Profile-Pic {
+  display: flex;
+  height: 23.4rem;
+  width: 45%;
+  
+  
+}
+
+.PFP {
+  display: block;
+  height: 23em;
+
+  margin: 0 auto;
+  border-radius: 10PX;
+  border: 1px solid white
+}
+.Intro-H1 {
+  font-family: 'Quattro';
+  
+}
+
+.Intro-P {
+  font-size: 17px;
+  font-weight: 200;
+  opacity: 90%;
+  padding-top: 12px;
+}
+
+.Intro-links {
+  display: flex;
+  font-size: 18px;
+  gap: 30px;
+  padding: 20px 0PX;
+}
+
+.Link-A {
+  font-size: 16px;
+  padding: 3px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+
+}
+
+
+/*PROJECTS SECTION*/
+
+.Projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100%;
+  padding: 0px 13vw;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+}
+
+
+.Projects-Header {
+justify-content: center;
+font-size: 36px;
+Margin-top: 10px;
+display: flex;
+}
+
+.Projects-Bio {
+Margin-top: 10px;
+}
+
+.Projects-Title {
+  height: 18%;
+  border: 2px solid transparent;
+}
+
+.Projects-Grid {
+ display: grid;
+ height: 82%;
+ width: 100%;
+ grid-gap: 22px;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 220px));
+  padding: 2rem 0rem;
+align-content: center;
+  
+}
+
+
+.Grid-Item {
+  display: flex;
+  color: black;
+min-height: 360px;
+height: 100%;
+border-radius: 10px;
+background-color: white;
+}
+
+.Card-Img {
+  display:flex;
+  
+  width: 100%;
+  height: 40%;
+  justify-content: center;
+}
+
+
+.Card-Content {
+padding: 15px 15px;
+}
+
+.Card-Header {
+  font-size: 20px;
+  padding-bottom: 0.9em;
+}
+
+.Card-Bio {
+  padding-bottom: 0.9em;
+  line-height: 1.675em;
+  height: 100%;
+}
+
+.Btn-Wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.Card-Btn, .Src-Btn {
+  padding: 0.5em;
+  border-radius: 15px;
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+  font-weight: 600;
+}
+
+.Project-SC {
+display: block;
+height: 100%;
+width: 100%;
+object-fit: cover;
+border-radius: 10px 10px 0px 0px;
+}
+/*SKILLS STYLES*/
+
+.Skills {
+  width: 100%;
+  height: 200PX;
+  background-color: white;
+}
+
+@keyframes slide {
+  from {
+  transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.Overflow {
+display: flex;
+padding: .5rem 1rem;
+justify-content: space-evenly;
+}
+
+.Wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.Logo-item {
+  margin-left: 1rem;
+  padding: 1rem ;
+  display: grid;
+  place-items: center;
+}
+
+ img {
+height: 6rem;
+margin-inline: 0.5rem;
+}
+
+/*CTO STYLES*/
+.CTO {
+color: black;
+background-color: white;
+display: flex;
+height: fit-content;
+justify-content: center;
+width: 100%;
+}
+
+.CTO-Wrapper {
+  width: 100%;
+  margin: 0 13vw;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+.CTO-Title, .CTO-Para {
+padding: 0.5rem 1rem;
+}
+
+.CTO-Title {
+  font-size: 26px;
+  font-family: 'Quattro';
+}
+
+.CTO-Para {
+font-size: 16px;
+line-height: 1.75em;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.CTO-bio {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+text-align: center;
+width: 100%;
+height: 30%;
+
+}
+
+.Input-field {
+  width: 100%;
+ 
+  height: 65%;
+}
+
+.Input-form {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.Input-form-A {
+display: flex;
+justify-content: space-evenly;
+}
+
+
+
+.Input-A {
+padding: 1.5em 0px;
+}
+
+.Input-B{
+padding: 1.5em;
+}
+
+.Input-label {
+  font-size:  11.5px;
+  opacity: 50%;
+}
+.user-name, .user-email{
+  margin-top: 10px;
+  padding: 12px 10em 12px 0px;
+}
+
+.user-message {
+  margin-top: 10px;
+  padding: 12px 500px 12px 10px;
+}
+
+.user-name, .user-email, .user-message {
+  margin-top: 10px;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 1px solid grey;
+}
+
+.button-wrapper {
+  width: 100%;
+display: flex;
+justify-content: center;
+padding: 2em 0px;
+margin-bottom: 5em;
+
+}
+
+.button {
+  padding: 10px 50px;
+  letter-spacing: 0.2em;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  
+}
+
+/*FOOTER STYLES */
+.footer {
+display: flex;
+flex-direction: column;
+height: 300px;
+width: 100%;
+color: white;
+justify-content: center;
+}
+
+.Footer-Title {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  height:20%;
+  width: 100%;
+  padding: 0.2em 13vw;
+}
+
+.Footer-UL {
+  display: flex;
+  justify-content: center;
+  gap: 10em;
+  width: 60% auto;
+  height: 30%;
+  padding: 40px 0;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  margin: 0px 11em;
+  list-style-type: none;
+  align-items: center;
+}
+
+.Footer-Li {
+display: flex;
+border: 2px solid red;
+  justify-content: space-evenly;
+
+}
+
+.Header-Icon-Bar {
+  MARGIN:0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 35%;
+}
+.Header-Icons {
+  display: flex;
+  flex-direction: row;
+}
+.Github{
+display: block;
+height: 65px;
+}
+
+.Twitter {
+  display: block;
+  height: 65px;
+
+}
+
+/*HOVER STYLES*/
+
+.Link-A:hover, .Contact:hover, .Card-Btn:hover, .Src-Btn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: 50ms;
+}
+
+ .Card-Btn:hover, .Src-Btn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+li:hover {
+  cursor: pointer;
+  color: gray;
+}
+
+.Grid-Item:hover {
+  transform: scale(1.09);
+  transition: 100ms;
+
+}
+
+.button:hover {
+  color: white;
+  background-color: black;
+  border: 1px solid grey;
+  transition: 150ms;
+}
