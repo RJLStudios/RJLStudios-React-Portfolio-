@@ -19,10 +19,10 @@ function CTO() {
             <span className='Input-label'>Your Name</span>
               <div className="Input-wrapper">
               
-                <input
+                <input className='Input-textarea'
                   type="text"
                   id="user-name"
-                  className="user-name"
+                  class="user-name"
                   placeholder="Enter your name"
                 ></input>
               </div>
@@ -31,7 +31,7 @@ function CTO() {
             <div className="Input-A">
               <span className='Input-label'>Email Address</span>
               <div className="Input-wrapper">
-              <input
+              <input className='Input-textarea'
                 type="email"
                 id="email-address"
                 class="user-email"
@@ -46,13 +46,14 @@ function CTO() {
             <div className="Input-B">
               <span className='Input-label'>Your Message</span>
               <div className="Input-wrapper">
-              <input
+              <textarea
+                rows='2'
                 type="text"
                 id="user-message"
                 class="user-message"
                 name="user-message"
                 placeholder="Hi, I need a new site!"
-              ></input>
+              ></textarea>
               </div>
             </div>
           </div>
