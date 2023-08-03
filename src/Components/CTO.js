@@ -1,4 +1,4 @@
-import {react} from "react";
+import { react } from "react";
 
 function CTO() {
   return (
@@ -13,54 +13,48 @@ function CTO() {
         </div>
 
         <div className="Input-field">
-          <form className='Email-form' action='mailto::Richardkelly1612@hotmail.com'>
-          <div className="Input-form">
-            <div className="Input-A">
-            <span className='Input-label'>Your Name</span>
-              <div className="Input-wrapper">
-              
-                <input className='Input-textarea'
-                  type="text"
-                  id="user-name"
-                  class="user-name"
-                  placeholder="Enter your name"
-                ></input>
-              </div>
-            </div>
-
-            <div className="Input-A">
-              <span className='Input-label'>Email Address</span>
-              <div className="Input-wrapper">
-              <input className='Input-textarea'
-                type="email"
-                id="email-address"
-                class="user-email"
-                name="email-address"
-                placeholder="Enter your email"
-              ></input>
-              </div>
-            </div>
-          </div>
-
-          <div className="Input-form-A">
-            <div className="Input-B">
-              <span className='Input-label'>Your Message</span>
-              <div className="Input-wrapper">
-              <textarea
-                rows='2'
+          <form
+            className="Email-form"
+            action="mailto::Richardkelly1612@hotmail.com"
+          >
+            <div class="form-outline">
+            <label class="form-label" for="formControlLg">
+                Your Name
+              </label>
+              <input
                 type="text"
-                id="user-message"
-                class="user-message"
-                name="user-message"
-                placeholder="Hi, I need a new site!"
-              ></textarea>
-              </div>
+                id="formControlLg"
+                class="form-control form-control-lg"
+              />
+             
             </div>
-          </div>
-          
-          <div className='button-wrapper'>
-          <submit className="button" type='submit' value='submit'>SUBMIT</submit>
-          </div>
+
+            <div class="form-outline">
+            <label class="form-label" for="formControlDefault">
+                Email Address
+              </label>
+              <input type="text" id="formControlDefault" class="form-control" />
+             
+            </div>
+
+            <div class="form-outline">
+            <label class="form-label" for="textArea">
+                Your Message
+              </label>
+              <textarea
+                type="text"
+                id="formControlSm"
+                class="form-control form-control-sm"
+                rows='4'
+              />
+            
+            </div>
+
+            <div className="button-wrapper">
+              <submit className="button" type="submit" value="submit">
+                SUBMIT
+              </submit>
+            </div>
           </form>
         </div>
       </div>

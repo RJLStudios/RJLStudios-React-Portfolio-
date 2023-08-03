@@ -326,62 +326,36 @@ height: 30%;
 .Input-field {
   width: 100%;
   height: 65%;
-}
-
-.Input-form {
-  display: flex;
-  justify-content: space-evenly;
-
-}
-
-.Input-form-A {
 display: flex;
-justify-content: space-evenly;
+justify-content: center;
 }
 
 
 
-.Input-A {
-padding: 1.5em 0px;
+.form-control, .form-control-sm {
+  width: 500px;
+  padding: 10px 0px;
+  border: 2px solid grey;
+  border-top: none;
+  border-right: none;
+  border-left: none;
 }
 
-.Input-B{
-  border: 2px solid;
-padding: 1.5em;
+.form-outline label {
+  display: block;
 }
 
-.Input-label {
-  font-size:  11.5px;
-  opacity: 50%;
+label {
+  padding-bottom: 5px;
 }
+
+.form-outline  {
+  margin-top:  20px;
+}
+
+
 /*NEW INPUT STYLES*/
 
-.Input-textarea {
-  border: 2px solid green;
-  width: 100%;
-  padding: .75rem 0.5rem;
-  border-bottom: 1px solid grey;
-  
-}
-.user-name, .user-email{
-  margin-top: 10px;
-  /*padding: 12px 10em 12px 0px;*/
-  padding: 12px 0px;
-}
-
-.user-message {
-  margin-top: 10px;
-  padding: 12px 22em 12px 0px;
- 
-}
-
-/*.user-name, .user-email, .user-message {
-  margin-top: 10px;
-  border-top: 0px;
-  border-right: 0px;
-  border-left: 0px;
-  border-bottom: 1px solid grey;
-}*/
 
 .button-wrapper {
   width: 100%;
@@ -500,9 +474,9 @@ li:hover {
 
 /*RESPONSIVE MEDIA RULES*/
 
-@media screen and (max-width:450px){
+@media screen and (max-width:390px){
  body {
-  border: 2px solid red;
+  
 }
 
 
@@ -528,36 +502,15 @@ li:hover {
   height: 65%;
 
 }
-.Input-A, .Input-B{
-  width: 90%;
+
+.form-control {
+  width: 90vw;
+  border-radius: 5px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  padding: 10px 0px;
 }
-
-.Input-A {
-  margin: 0px 1em;;
-}
-
-.Input-B {
-  border: none;
-  margin-left: -0.5em;
-}
-
-
-
-.user-name, .user-email, .user-message{
-  margin-top: 10px;
-  /*padding: 12px 10em 12px 0px;*/
-  padding: 12px 12em 12px 0px;
-}
-
-
-.Input-form {
-  display: block;
-}
-
-.Input-form-A {
-display: block;
-}
-
 }
 
 @media screen and (max-width:550px){
@@ -565,4 +518,12 @@ display: block;
  .PFP{
   visibility: hidden;
  }
+ .form-control, .form-control-sm {
+  width: 90vw;
+  border-radius: 5px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  padding: 10px 0px;
+}
 }
