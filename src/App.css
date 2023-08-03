@@ -502,12 +502,9 @@ li:hover {
 
 @media screen and (max-width:450px){
  body {
-  border: 2px solid green;
+  border: 2px solid red;
 }
 
-.PFP{
- visibility: hidden;
-}
 
 .Homepage {
   background-color: black;
@@ -561,5 +558,11 @@ li:hover {
 display: block;
 }
 
+}
 
+@media screen and (max-width:550px){
+ 
+ .PFP{
+  visibility: hidden;
+ }
 }
