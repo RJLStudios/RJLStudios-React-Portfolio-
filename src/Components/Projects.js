@@ -7,6 +7,7 @@ function Projects() {
                 <h2 className='Projects-Header'>Projects</h2>
 
             </div>
+            <div className='Projects-Wrapper'>
             <div className='Projects-Grid'>
 
                 <div className='Grid-Item'>
@@ -61,6 +62,7 @@ function Projects() {
                 </div>
 
                 
+            </div>
             </div>
             
 
