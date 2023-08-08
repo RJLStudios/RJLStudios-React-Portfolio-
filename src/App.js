@@ -6,11 +6,14 @@ import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Projects from './Components/Projects';
 import Skills from './Components/Skills';
+import { BrowserRouter } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 
 function App() {
   return (
-    <div className='App'>
+    <BrowserRouter>
+     <div className='App'>
       <Header/>
       <Homepage/>
       <Projects/>
@@ -18,6 +21,7 @@ function App() {
       <CTO/>
       <Footer/>
     </div>
+    </BrowserRouter> 
   );
 }
 

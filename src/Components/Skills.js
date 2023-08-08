@@ -23,7 +23,7 @@ function Skills() {
                 src="https://vectorlogoseek.com/wp-content/uploads/2020/06/figma-vector-logo.png"
                 className="Figma"
                 alt="Figma img"
-                style={{ height: "120px" }}
+                style={{ height: "6em" }}
               ></img>
             </div>
             <div className="Logo-item">
@@ -31,7 +31,7 @@ function Skills() {
                 src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png"
                 className="Github"
                 alt="GIthub img"
-                style={{ height: "40px" }}
+                style={{ height: "2.5em" }}
               ></img>
             </div>
           </div>

@@ -141,6 +141,11 @@ body {
 
 /*PROJECTS SECTION*/
 
+.Projects-Wrapper {
+  flex-grow: 1;
+  height: 100%;
+}
+
 .Projects {
   display: flex;
   flex-direction: column;
@@ -383,6 +388,8 @@ height: 300px;
 width: 100%;
 color: white;
 justify-content: center;
+background-color: black;
+
 }
 
 .Footer-Title {

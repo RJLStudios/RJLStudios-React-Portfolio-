@@ -1,10 +1,11 @@
 import React from "react";
+import CV from '/home/mvra/Desktop/RJLStudios React Portfolio/src/Images/Richard Kelly Web Developer CV - 08.08.pdf';
 
 
 function Homepage() {
   return (
     
-    <div  className="Homepage">
+    <div  className="Homepage" id="Homepage">
       <div className="Home-Bio">
         <div className="Intro-text">
           <h1 className="Intro-H1">
@@ -25,7 +26,7 @@ function Homepage() {
           </p>
 
           <div className="Intro-links">
-            <a href='/Resume.pdf' download='Resume.pdf'><button className="Link-A">View Resume</button></a>
+            <a href={CV} download=''><button className="Link-A">View Resume</button></a>
             <a href='https://github.com/RJLStudios' ><button className="Link-A"  >View Github</button></a>
             <a href='https://www.linkedin.com/in/richard-kelly-764602156/'><button className="Link-A">View LinkedIn</button></a>
           </div>
