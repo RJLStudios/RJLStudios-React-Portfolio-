@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/RJLStudios-React-Portfolio-/static/css/main.7bbcfeeb.css",
-    "main.js": "/RJLStudios-React-Portfolio-/static/js/main.b915e3d5.js",
+    "main.css": "/RJLStudios-React-Portfolio-/static/css/main.42d85355.css",
+    "main.js": "/RJLStudios-React-Portfolio-/static/js/main.a40eec5b.js",
     "static/media/QuattrocentoSans-Regular.ttf": "/RJLStudios-React-Portfolio-/static/media/QuattrocentoSans-Regular.5293b4c9e114a999cd53.ttf",
     "index.html": "/RJLStudios-React-Portfolio-/index.html",
-    "main.7bbcfeeb.css.map": "/RJLStudios-React-Portfolio-/static/css/main.7bbcfeeb.css.map",
-    "main.b915e3d5.js.map": "/RJLStudios-React-Portfolio-/static/js/main.b915e3d5.js.map"
+    "main.42d85355.css.map": "/RJLStudios-React-Portfolio-/static/css/main.42d85355.css.map",
+    "main.a40eec5b.js.map": "/RJLStudios-React-Portfolio-/static/js/main.a40eec5b.js.map"
   },
   "entrypoints": [
-    "static/css/main.7bbcfeeb.css",
-    "static/js/main.b915e3d5.js"
+    "static/css/main.42d85355.css",
+    "static/js/main.a40eec5b.js"
   ]
 }
