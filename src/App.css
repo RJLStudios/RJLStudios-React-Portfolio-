@@ -141,11 +141,19 @@ body {
 
 /*PROJECTS SECTION*/
 
+<<<<<<< HEAD
 .Projects-Wrapper {
   flex-grow: 1;
   height: 100%;
 }
 
+=======
+.Projects-Wrapper{
+
+  flex-grow: 1;
+  height: 100%;
+}
+>>>>>>> origin/main
 .Projects {
   display: flex;
   flex-direction: column;
