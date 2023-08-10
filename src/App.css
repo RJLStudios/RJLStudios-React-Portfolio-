@@ -141,19 +141,11 @@ body {
 
 /*PROJECTS SECTION*/
 
-<<<<<<< HEAD
 .Projects-Wrapper {
   flex-grow: 1;
   height: 100%;
 }
 
-=======
-.Projects-Wrapper{
-
-  flex-grow: 1;
-  height: 100%;
-}
->>>>>>> origin/main
 .Projects {
   display: flex;
   flex-direction: column;
@@ -543,7 +535,7 @@ li:hover {
 }
 
 .Header-links {
-  
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;

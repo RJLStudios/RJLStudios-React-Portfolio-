@@ -19,10 +19,10 @@ function Projects() {
                         
                         <div className='Card-Content'>
                             <h1 class='Card-Header'>Portfolio App</h1>
-                            <p class='Card-Bio'>A virtual resume for all current work. You may already looking at this project!
+                            <p class='Card-Bio'>A virtual resume for all current work. You may already be looking at this project!
                             </p>
                             <div class='Btn-Wrapper'>
-                             <a href='https://github.com/RJLStudios/Virtual-Portfolio' target='_blank'><button class='Src-Btn'>Source Code</button></a>
+                             <a href='https://github.com/RJLStudios/RJLStudios-React-Portfolio-' target='_blank'><button class='Src-Btn'>Source Code</button></a>
                             </div>
                         </div>
                     </div>
