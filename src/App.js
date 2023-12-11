@@ -8,7 +8,7 @@ import Projects from './Components/Projects';
 import Skills from './Components/Skills';
 import { BrowserRouter } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
-import CV from '/home/mvra/Desktop/RJLStudios React Portfolio/src/Images/Richard Kelly Web Developer CV - 08.08.pdf';
+
 
 
 
@@ -47,8 +47,41 @@ const ctoScrollToComponent = () => {
          </ul>
         </div>
 
-      <Homepage/>
-     
+        <div  className="Homepage" id="Homepage">
+      <div className="Home-Bio">
+        <div className="Intro-text">
+          <h1 className="Intro-H1">
+            I'M RICHARD, A FRONT-END DEVELOPER BASED IN LONDON.
+          </h1>
+          <p className="Intro-P">
+            A self taught developer specialising in front-end languages and
+            frameworks such as HTML, CSS, JavaScript and React.
+          </p>
+
+          <p className="Intro-P">
+            I believe in incorporating passions (such as music!) to create
+            convenient applications.
+          </p>
+
+          <p className="Intro-P">
+            I'm currently looking for a new role as a developer. Hire me?
+          </p>
+
+          <div className="Intro-links">
+            <a src='./Richard Kelly Web Developer CV - 08.08.pdf' download=''><button className="Link-A">View Resume</button></a>
+            <a href='https://github.com/RJLStudios' ><button className="Link-A"  >View Github</button></a>
+            <a href='https://www.linkedin.com/in/richard-kelly-764602156/'><button className="Link-A">View LinkedIn</button></a>
+          </div>
+
+         
+        </div>
+        <div className='Profile-Pic'>
+            <img className='PFP' src='https://lh3.googleusercontent.com/drive-viewer/AK7aPaDuETs7BWeYxiRblEP7yoXtnrftQvYqlA1nKlZCfMIIf-8oEA73B3XsWdUjYHfKf8ib28UhdZEren-b4zaYu7Hd7hso0w=s1600' alt='pfp alt'></img>
+        </div>
+      </div>
+
+      
+    </div>
       <div className='Projects' ref={projectRef}>
             <div className='Projects-Title'>
                 <h2 className='Projects-Header'>Projects</h2>
