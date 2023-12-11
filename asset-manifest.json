@@ -1,15 +1,14 @@
 {
   "files": {
     "main.css": "/RJLStudios-React-Portfolio-/static/css/main.2294659a.css",
-    "main.js": "/RJLStudios-React-Portfolio-/static/js/main.243c3687.js",
+    "main.js": "/RJLStudios-React-Portfolio-/static/js/main.dc2d4a3d.js",
     "static/media/QuattrocentoSans-Regular.ttf": "/RJLStudios-React-Portfolio-/static/media/QuattrocentoSans-Regular.5293b4c9e114a999cd53.ttf",
-    "static/media/Richard Kelly Web Developer CV - 08.08.pdf": "/RJLStudios-React-Portfolio-/static/media/Richard Kelly Web Developer CV - 08.08.b8eff2527eb784967e39.pdf",
     "index.html": "/RJLStudios-React-Portfolio-/index.html",
     "main.2294659a.css.map": "/RJLStudios-React-Portfolio-/static/css/main.2294659a.css.map",
-    "main.243c3687.js.map": "/RJLStudios-React-Portfolio-/static/js/main.243c3687.js.map"
+    "main.dc2d4a3d.js.map": "/RJLStudios-React-Portfolio-/static/js/main.dc2d4a3d.js.map"
   },
   "entrypoints": [
     "static/css/main.2294659a.css",
-    "static/js/main.243c3687.js"
+    "static/js/main.dc2d4a3d.js"
   ]
 }
