@@ -90,9 +90,28 @@ const ctoScrollToComponent = () => {
             <div className='Projects-Wrapper'>
             <div className='Projects-Grid'>
 
-                <div className='Grid-Item'>
+               
+
+            <div className='Grid-Item'>
                     <div className='Card'>
-                      
+                        <div className='Card-Img'>
+                            <img className='Project-SC' src=''></img>
+                        </div>
+                        <div className='Card-Content'>
+                            <h1 class='Card-Header'>Beat Store</h1>
+                            <p class='Card-Bio'>A digital production marketplace that allows clients to license and sell my beats.</p>
+                            <div class='Btn-Wrapper'>
+                             <a href='https://rjlstudios.github.io/Spotify-Clone/' target='_blank'><button class='Card-Btn'>Visit</button></a>
+                             <a href='https://github.com/RJLStudios/react-beatstore' target='_blank'><button class='Src-Btn'>Source Code</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div className='Grid-Item'>
+                    <div className='Card'>         
                         <div className='Card-Img'>
                             <img className='Project-SC' src='https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.png'></img>
                         </div>
