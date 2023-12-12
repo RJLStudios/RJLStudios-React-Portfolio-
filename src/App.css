@@ -178,7 +178,7 @@ Margin-top: 10px;
  display: grid;
  height: 82%;
  width: 100%;
- grid-gap: 22px;
+ grid-gap: 16px;
   grid-template-columns: repeat(auto-fill, minmax(210px, 220px));
   padding: 2rem 0rem;
 align-content: center;
@@ -235,6 +235,17 @@ padding: 15px 15px;
   font-weight: 600;
 }
 
+/*FOR PROJECTS STILL IN PROGRESS*/
+.Card-Btn-Pending {
+  padding: 0.5em;
+  border-radius: 15px;
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  background-color: grey;
+  font-weight: 600;
+}
+/*FOR PROJECTS STILL IN PROGRESS*/
 .Project-SC {
 display: block;
 height: 100%;

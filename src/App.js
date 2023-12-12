@@ -36,6 +36,16 @@ const ctoScrollToComponent = () => {
     scrollToComponent(ctoRef);
   }
 
+  const cvButtonDL = () => {
+    const cvPDF = 'Sample.pdf';
+    const link = document.createElement('a')
+    link.href = cvPDF;
+    link.download = '.src\Richard Kelly - CV 30.11 - Copy (1).pdf';
+    document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+  }
+
   return (
      <div className='App'>
         <div className='Navbar' ref={homeRef}>
@@ -68,7 +78,7 @@ const ctoScrollToComponent = () => {
           </p>
 
           <div className="Intro-links">
-            <a src='./Richard Kelly Web Developer CV - 08.08.pdf' download=''><button className="Link-A">View Resume</button></a>
+            <a src='src\Richard Kelly - CV 30.11 - Copy (1).pdf' download=''><button className="Link-A" onClick={cvButtonDL}>View Resume</button></a>
             <a href='https://github.com/RJLStudios' ><button className="Link-A"  >View Github</button></a>
             <a href='https://www.linkedin.com/in/richard-kelly-764602156/'><button className="Link-A">View LinkedIn</button></a>
           </div>
@@ -95,13 +105,13 @@ const ctoScrollToComponent = () => {
             <div className='Grid-Item'>
                     <div className='Card'>
                         <div className='Card-Img'>
-                            <img className='Project-SC' src=''></img>
+                            <img className='Project-SC' src='https://lh3.googleusercontent.com/drive-viewer/AK7aPaCRbI07nseHFocBH-bbQC7JrktEJRd8Ta1ETWqmgwrpzkc-NV2jcUBTXixbMIZmGtIMPCaok58SgSYVwCllKPTOBdYy=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaCRbI07nseHFocBH-bbQC7JrktEJRd8Ta1ETWqmgwrpzkc-NV2jcUBTXixbMIZmGtIMPCaok58SgSYVwCllKPTOBdYy=s1600'></img>
                         </div>
                         <div className='Card-Content'>
                             <h1 class='Card-Header'>Beat Store</h1>
                             <p class='Card-Bio'>A digital production marketplace that allows clients to license and sell my beats.</p>
                             <div class='Btn-Wrapper'>
-                             <a href='https://rjlstudios.github.io/Spotify-Clone/' target='_blank'><button class='Card-Btn'>Visit</button></a>
+                             <a href='https://rjlstudios.github.io/Spotify-Clone/' target='_blank'><button class='Card-Btn-Pending'>Visit</button></a>
                              <a href='https://github.com/RJLStudios/react-beatstore' target='_blank'><button class='Src-Btn'>Source Code</button></a>
                             </div>
                         </div>
