@@ -111,7 +111,7 @@ const ctoScrollToComponent = () => {
                             <h1 class='Card-Header'>Beat Store</h1>
                             <p class='Card-Bio'>A digital production marketplace that allows clients to license and sell my beats.</p>
                             <div class='Btn-Wrapper'>
-                             <a href='https://rjlstudios.github.io/Spotify-Clone/' target='_blank'><button class='Card-Btn-Pending'>Visit</button></a>
+                             <a href='https://rjlstudios.github.io/react-beatstore/' target='_blank'><button class='Card-Btn'>Visit</button></a>
                              <a href='https://github.com/RJLStudios/react-beatstore' target='_blank'><button class='Src-Btn'>Source Code</button></a>
                             </div>
                         </div>
