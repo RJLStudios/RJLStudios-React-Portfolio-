@@ -1,5 +1,6 @@
 import React, {useRef} from "react";
 import "./App.css";
+import emailjs from '@emailjs/browser'
 /*import CTO from './Components/CTO';*/
 import Homepage from './Components/Homepage';
 import Footer from './Components/Footer';
@@ -45,6 +46,19 @@ const ctoScrollToComponent = () => {
         link.click();
         document.body.removeChild(link);
   }
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_re14o8d', 'template_64b3ces', form.current, 'ATtn1deBhV3vWzT70')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    }
 
   return (
      <div className='App'>
@@ -178,6 +192,8 @@ const ctoScrollToComponent = () => {
         </div>
 
       <Skills/>
+
+
      
       <div className="CTO" ref={ctoRef}>
       <div className="CTO-Wrapper">
@@ -190,9 +206,11 @@ const ctoScrollToComponent = () => {
         </div>
 
         <div className="Input-field">
-          <form
+          <form 
+            ref={form}
+            onSubmit={sendEmail}
             className="Email-form"
-            action="mailto::Richardkelly1612@hotmail.com"
+           
           >
             <div class="form-outline">
             <label class="form-label" for="formControlLg">
@@ -202,6 +220,7 @@ const ctoScrollToComponent = () => {
                 type="text"
                 id="formControlLg"
                 class="form-control form-control-lg"
+                name='from_name'
               />
              
             </div>
@@ -223,14 +242,14 @@ const ctoScrollToComponent = () => {
                 id="formControlSm"
                 class="form-control form-control-sm"
                 rows='4'
+                name='message'
               />
             
             </div>
 
             <div className="button-wrapper">
-              <submit className="button" type="submit" value="submit">
-                SUBMIT
-              </submit>
+              <input className="button" type="submit" value="SEND"/>
+              
             </div>
           </form>
         </div>
