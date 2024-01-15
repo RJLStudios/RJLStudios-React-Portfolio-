@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/RJLStudios-React-Portfolio-/static/css/main.a583974e.css",
-    "main.js": "/RJLStudios-React-Portfolio-/static/js/main.58442a78.js",
+    "main.css": "/RJLStudios-React-Portfolio-/static/css/main.4ea529aa.css",
+    "main.js": "/RJLStudios-React-Portfolio-/static/js/main.cfd37c32.js",
+    "static/media/Beat Store.png": "/RJLStudios-React-Portfolio-/static/media/Beat Store.aafa2867a06cf31169bc.png",
     "static/media/QuattrocentoSans-Regular.ttf": "/RJLStudios-React-Portfolio-/static/media/QuattrocentoSans-Regular.5293b4c9e114a999cd53.ttf",
     "index.html": "/RJLStudios-React-Portfolio-/index.html",
-    "main.a583974e.css.map": "/RJLStudios-React-Portfolio-/static/css/main.a583974e.css.map",
-    "main.58442a78.js.map": "/RJLStudios-React-Portfolio-/static/js/main.58442a78.js.map"
+    "main.4ea529aa.css.map": "/RJLStudios-React-Portfolio-/static/css/main.4ea529aa.css.map",
+    "main.cfd37c32.js.map": "/RJLStudios-React-Portfolio-/static/js/main.cfd37c32.js.map"
   },
   "entrypoints": [
-    "static/css/main.a583974e.css",
-    "static/js/main.58442a78.js"
+    "static/css/main.4ea529aa.css",
+    "static/js/main.cfd37c32.js"
   ]
 }
