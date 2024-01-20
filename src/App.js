@@ -9,6 +9,7 @@ import Projects from './Components/Projects';
 import Skills from './Components/Skills';
 import { BrowserRouter } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
+import BeatStoreImage from './Images/Beat Store.png';
 
 
 
@@ -99,9 +100,8 @@ const ctoScrollToComponent = () => {
 
          
         </div>
-        <div className='Profile-Pic'>
-            <img className='PFP' src='https://lh3.googleusercontent.com/drive-viewer/AK7aPaDuETs7BWeYxiRblEP7yoXtnrftQvYqlA1nKlZCfMIIf-8oEA73B3XsWdUjYHfKf8ib28UhdZEren-b4zaYu7Hd7hso0w=s1600' alt='pfp alt'></img>
-        </div>
+      
+      
       </div>
 
       
@@ -119,7 +119,7 @@ const ctoScrollToComponent = () => {
             <div className='Grid-Item'>
                     <div className='Card'>
                         <div className='Card-Img'>
-                            <img className='Project-SC' src='https://lh3.googleusercontent.com/drive-viewer/AK7aPaCRbI07nseHFocBH-bbQC7JrktEJRd8Ta1ETWqmgwrpzkc-NV2jcUBTXixbMIZmGtIMPCaok58SgSYVwCllKPTOBdYy=s1600?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaCRbI07nseHFocBH-bbQC7JrktEJRd8Ta1ETWqmgwrpzkc-NV2jcUBTXixbMIZmGtIMPCaok58SgSYVwCllKPTOBdYy=s1600'></img>
+                            <img className='Project-SC' src='https://assets-global.website-files.com/6176f98d9518dc8adcea560e/61c0e460ea6d0c73fca35508_3%20Vital%20BeatStars%20Features%20You%27re%20Sleeping%20On.jpg' alt='beatstore'></img>
                         </div>
                         <div className='Card-Content'>
                             <h1 class='Card-Header'>Beat Store</h1>
@@ -171,7 +171,7 @@ const ctoScrollToComponent = () => {
                 <div className='Grid-Item'>
                     <div className='Card'>
                         <div className='Card-Img'>
-                            <img className='Project-SC' src='https://www.thetechedvocate.org/wp-content/uploads/2023/05/create-music-streaming-app-like-Spotify.png'></img>
+                            <img className='Project-SC Beatstore-Img' src='https://www.thetechedvocate.org/wp-content/uploads/2023/05/create-music-streaming-app-like-Spotify.png'></img>
                         </div>
                         <div className='Card-Content'>
                             <h1 class='Card-Header'>Spotify Player</h1>

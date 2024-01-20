@@ -185,6 +185,10 @@ align-content: center;
   
 }
 
+.Beatstore-Img {
+background-image: url(./Images/Beat\ Store.png);
+}
+
 
 .Grid-Item {
   display: flex;
@@ -557,3 +561,9 @@ li:hover {
 }
 
 }
+
+/*PFP DIV */
+
+/*<div className='Profile-Pic'>
+<img className='PFP' src='https://drive.google.com/uc?export=download&id=1zlBCGFbNp9gjUwVuCQiPtQutpC_trttJ' alt='pfp alt'></img>
+</div>*/
