@@ -42,7 +42,7 @@ const ctoScrollToComponent = () => {
     const cvPDF = 'Sample.pdf';
     const link = document.createElement('a')
     link.href = cvPDF;
-    link.download = '.src\Richard Kelly - CV 30.11 - Copy (1).pdf';
+    link.download = '.src/Richard Kelly - CV 30.11 - Copy (1).pdf';
     document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -160,7 +160,7 @@ const ctoScrollToComponent = () => {
                             <h1 class='Card-Header'>Weather App</h1>
                             <p class='Card-Bio'>A weather app utilising the OpenWeatherMap API to fetch data using query search.</p>
                             <div class='Btn-Wrapper'>
-                            <a href='https://rjlstudios.github.io/Weather-App/' target='_blank'><button class='Card-Btn'>Visit</button></a>
+                            <a href='https://rjlstudios.github.io/Weather-App/' target='_blank'><button class='Card-Btn-Pending'>Visit</button></a>
                             <a href='https://github.com/RJLStudios/Weather-App' target='_blank'><button class='Src-Btn'>Source Code</button></a>
                             </div>
                         </div>
@@ -177,7 +177,7 @@ const ctoScrollToComponent = () => {
                             <h1 class='Card-Header'>Spotify Player</h1>
                             <p class='Card-Bio'>A spotify app  created and curated by my playlists, with plans to utilise the Spotify API.</p>
                             <div class='Btn-Wrapper'>
-                             <a /*href='https://rjlstudios.github.io/Spotify-Clone/' target='_blank'*/><button class=' Card-Btn-Pending'>Visit</button></a>
+                             <a href='https://rjlstudios.github.io/RJL-Spotify/' target='_blank'><button class=' Card-Btn'>Visit</button></a>
                              <a href='https://github.com/RJLStudios/Spotify-Clone' target='_blank'><button class='Src-Btn'>Source Code</button></a>
                             </div>
                         </div>

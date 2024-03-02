@@ -34,7 +34,7 @@ function Skills() {
               ></img>
             </div>
           </div>
-          <div className="Wrapper">
+          <div className="Wrapper Slide">
             <div className="Logo-item">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png" alt="HTML img"></img>
             </div>
