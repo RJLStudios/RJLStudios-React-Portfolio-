@@ -177,7 +177,7 @@ const ctoScrollToComponent = () => {
                             <h1 class='Card-Header'>Spotify Player</h1>
                             <p class='Card-Bio'>A spotify app  created and curated by my playlists, with plans to utilise the Spotify API.</p>
                             <div class='Btn-Wrapper'>
-                             <a href='https://rjlstudios.github.io/RJL-Spotify/' target='_blank'><button class=' Card-Btn'>Visit</button></a>
+                             <a href='https://rjlstudios.github.io/RJL-Spotify/' target='_blank'><button class='Card-Btn-Pending'>Visit</button></a>
                              <a href='https://github.com/RJLStudios/Spotify-Clone' target='_blank'><button class='Src-Btn'>Source Code</button></a>
                             </div>
                         </div>
