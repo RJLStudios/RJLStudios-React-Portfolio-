@@ -10,6 +10,7 @@ import Skills from './Components/Skills';
 import { BrowserRouter } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
 import BeatStoreImage from './Images/Beat Store.png';
+import CV from './Images/Richard Kelly - CV 22.02.24 (1).pdf';
 
 
 
@@ -39,13 +40,10 @@ const ctoScrollToComponent = () => {
   }
 
   const cvButtonDL = () => {
-    const cvPDF = 'Sample.pdf';
     const link = document.createElement('a')
-    link.href = cvPDF;
-    link.download = '.src/Richard Kelly - CV 30.11 - Copy (1).pdf';
-    document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+    link.href = './Images/Richard Kelly - CV 22.02.24 (1).pdf';
+    link.download = './Images/Richard Kelly - CV 22.02.24 (1).pdf';
+    link.click();
   }
 
   const form = useRef();
@@ -93,7 +91,7 @@ const ctoScrollToComponent = () => {
           </p>
 
           <div className="Intro-links">
-            <a src='src\Richard Kelly - CV 30.11 - Copy (1).pdf' download=''><button className="Link-A" onClick={cvButtonDL}>View Resume</button></a>
+            <a src='src\Images\Richard Kelly - CV 22.02.24 (1).pdf' download=''><button className="Link-A" onClick={cvButtonDL}>View Resume</button></a>
             <a href='https://github.com/RJLStudios' ><button className="Link-A"  >View Github</button></a>
             <a href='https://www.linkedin.com/in/richard-kelly-764602156/'><button className="Link-A">View LinkedIn</button></a>
           </div>
@@ -150,41 +148,7 @@ const ctoScrollToComponent = () => {
                         </div>
                     </div>
                 </div>
-
-                <div className='Grid-Item'>
-                    <div className='Card'>
-                        <div className='Card-Img'>
-                            <img className='Project-SC' src='https://s3-alpha.figma.com/hub/file/2477810093/c41260d4-7e79-44cf-b759-411368380fa0-cover.png'></img>
-                        </div>
-                        <div className='Card-Content'>
-                            <h1 class='Card-Header'>Weather App</h1>
-                            <p class='Card-Bio'>A weather app utilising the OpenWeatherMap API to fetch data using query search.</p>
-                            <div class='Btn-Wrapper'>
-                            <a href='https://rjlstudios.github.io/Weather-App/' target='_blank'><button class='Card-Btn-Pending'>Visit</button></a>
-                            <a href='https://github.com/RJLStudios/Weather-App' target='_blank'><button class='Src-Btn'>Source Code</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-
-                <div className='Grid-Item'>
-                    <div className='Card'>
-                        <div className='Card-Img'>
-                            <img className='Project-SC Beatstore-Img' src='https://www.thetechedvocate.org/wp-content/uploads/2023/05/create-music-streaming-app-like-Spotify.png'></img>
-                        </div>
-                        <div className='Card-Content'>
-                            <h1 class='Card-Header'>Spotify Player</h1>
-                            <p class='Card-Bio'>A spotify app  created and curated by my playlists, with plans to utilise the Spotify API.</p>
-                            <div class='Btn-Wrapper'>
-                             <a href='https://rjlstudios.github.io/RJL-Spotify/' target='_blank'><button class='Card-Btn-Pending'>Visit</button></a>
-                             <a href='https://github.com/RJLStudios/Spotify-Clone' target='_blank'><button class='Src-Btn'>Source Code</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
+              
             </div>
             </div>
             
