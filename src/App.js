@@ -2,18 +2,14 @@ import React, {useRef} from "react";
 import "./App.css";
 import emailjs from '@emailjs/browser'
 /*import CTO from './Components/CTO';*/
-import Homepage from './Components/Homepage';
-import Footer from './Components/Footer';
-import Header from './Components/Header';
-import Projects from './Components/Projects';
 import Skills from './Components/Skills';
 import { BrowserRouter } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
-import BeatStoreImage from './Images/Beat Store.png';
 import CV from './Images/Richard Kelly - CV 22.02.24 (1).pdf';
-
-
-
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import 'animate.css';
+import Knew98 from './Images/Knew 98 draft.png';
+import { motion, useTransform, useScroll} from 'framer-motion';
 
 
 function App() {
@@ -21,6 +17,7 @@ function App() {
   const homeRef = useRef(null);
   const projectRef = useRef(null);
   const ctoRef = useRef(null);
+
 
   function scrollToComponent(ref) {
     if (ref.current) {
@@ -61,95 +58,106 @@ const ctoScrollToComponent = () => {
 
   return (
      <div className='App'>
-        <div className='Navbar' ref={homeRef}>
-       <h3 className='Logo'>RJLStudios</h3>
-         <ul className='Header-links'>
-            <li className='Home-btn' onClick={homeScrollToComponent}>Home</li>
-            <li className='Projects-btn' onClick={projectScrollToComponent}>Projects</li>
-            <li className='contact-btn' onClick={ctoScrollToComponent}>Contact Me</li>
+        <div className='Navbar ' ref={homeRef}>
+       <h3 className='Logo animate__animated animate__fadeInLeft'>RJLStudios</h3>
+
+         <ul className='Header-links animate__animated animate__fadeInLeft'>
+            <li className='Home-btn' onClick={homeScrollToComponent}>HOME</li>
+            <li className='Projects-btn' onClick={projectScrollToComponent}>PROJECTS</li>
+            <li className='contact-btn' onClick={ctoScrollToComponent}>CONTACT</li>
          </ul>
+
+         <div className='Header-progress'>
+          <div className='Progress-circle'></div>
+         </div>
+         
         </div>
 
         <div  className="Homepage" id="Homepage">
       <div className="Home-Bio">
-        <div className="Intro-text">
-          <h1 className="Intro-H1">
-            I'M RICHARD, A FRONT-END DEVELOPER BASED IN LONDON.
-          </h1>
-          <p className="Intro-P">
-            A self taught developer specialising in front-end languages and
-            frameworks such as HTML, CSS, JavaScript and React.
+        <div className="Intro-text ">
+
+        <p className="Intro-P Opaque FadeUp Delay1">
+            RICHARD KELLY
           </p>
 
-          <p className="Intro-P">
-            I believe in incorporating passions (such as music!) to create
-            convenient applications.
-          </p>
-
-          <p className="Intro-P">
-            I'm currently looking for a new role as a developer.
-          </p>
-
-          <div className="Intro-links">
-            <a src='src\Images\Richard Kelly - CV 22.02.24 (1).pdf' download=''><button className="Link-A" onClick={cvButtonDL}>View Resume</button></a>
-            <a href='https://github.com/RJLStudios' ><button className="Link-A"  >View Github</button></a>
-            <a href='https://www.linkedin.com/in/richard-kelly-764602156/'><button className="Link-A">View LinkedIn</button></a>
+          <div className="FadeUp1 Delay1 Italic">
+          Front-End  
           </div>
 
-         
+          <h1 className="Intro-H1 FadeUp1 Delay2">
+          Web Developer 
+          </h1>
+      
+          <p className="Intro-P FadeUp2 Delay2">
+           Combining passions to create beautiful and engaging digital experiences in London, United Kingdom.
+          </p>
+
+          
         </div>
-      
-      
+        <div className="Intro-links">
+        <div className='Social-Wrapper'>
+            <a href='https://github.com/RJLStudios' className='Social animate__animated animate__fadeInRight'><FaGithub /></a>
+            <a href='https://www.linkedin.com/in/richard-kelly-764602156/' className='Social animate__animated animate__fadeInRight'><FaLinkedinIn /></a>
+            </div>
+
+            <a src='src\Images\Richard Kelly - CV 22.02.24 (1).pdf' download=''><button className="Link-A animate__animated animate__fadeInRight" onClick={cvButtonDL}>View Resume</button></a>
+
+          </div>
       </div>
 
       
     </div>
       <div className='Projects' ref={projectRef}>
-            <div className='Projects-Title'>
-                <h2 className='Projects-Header'>Projects</h2>
-
-            </div>
-            <div className='Projects-Wrapper'>
-            <div className='Projects-Grid'>
-
-               
-
+            <div className='Projects-Grid Snaps-Inline'>
             <div className='Grid-Item'>
-                    <div className='Card'>
-                        <div className='Card-Img'>
-                            <img className='Project-SC' src='https://assets-global.website-files.com/6176f98d9518dc8adcea560e/61c0e460ea6d0c73fca35508_3%20Vital%20BeatStars%20Features%20You%27re%20Sleeping%20On.jpg' alt='beatstore'></img>
-                        </div>
-                        <div className='Card-Content'>
-                            <h1 class='Card-Header'>Beat Store</h1>
-                            <p class='Card-Bio'>A digital production marketplace that allows clients to license and sell my beats.</p>
-                            <div class='Btn-Wrapper'>
-                             <a href='https://rjlstudios.github.io/react-beatstore/' target='_blank'><button class='Card-Btn'>Visit</button></a>
-                             <a href='https://github.com/RJLStudios/react-beatstore' target='_blank'><button class='Src-Btn'>Source Code</button></a>
-                            </div>
-                        </div>
+            <div className="Card-Img BeatStore"  ></div>     
+                   <div className='Card-Content'>
+                    <div className='Sub-Title'>
+                      <p className='Sub-Title-Cat'>REACT</p>
                     </div>
-                </div>
+                    <div className='Card-Title'>Beatstore</div>
+                    
+                    <div className='Card-Info'>An e-commerce music production marketplace that allows clients to license and purchase my beats.</div>
+                    <div className='Sml-Info-Wrapper'>
+                      <div className='Card-Info Sml'>MUSIC, E-COMMERCE </div>
+                      <a className='Project-Link' href='https://rjlstudios.github.io/react-beatstore/'><div className='Visit'> VISIT</div></a>
+                      </div>
+                   </div>
+               </div>
 
-
-
-                <div className='Grid-Item'>
-                    <div className='Card'>         
-                        <div className='Card-Img'>
-                            <img className='Project-SC' src='https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.png'></img>
-                        </div>
-                        
-                        <div className='Card-Content'>
-                            <h1 class='Card-Header'>Portfolio App</h1>
-                            <p class='Card-Bio'>A virtual resume for all current work. You may already be looking at this project!
-                            </p>
-                            <div class='Btn-Wrapper'>
-                             <a href='https://github.com/RJLStudios/RJLStudios-React-Portfolio-' target='_blank'><button class='Src-Btn'>Source Code</button></a>
-                            </div>
-                        </div>
+               <div className='Grid-Item'>
+            <div className="Card-Img Knew98"  ></div>     
+                   <div className='Card-Content'>
+                    <div className='Sub-Title'>
+                      <p className='Sub-Title-Cat'>REACT</p>
                     </div>
-                </div>
+                    <div className='Card-Title'>Knew 98' Website</div>
+
+                    <div className='Card-Info'>Knew 98's artist website showcasing current work and booking features</div>
+                    <div className='Sml-Info-Wrapper'>
+                      <div className='Card-Info Sml'>MUSIC </div>
+                      <div className='Visit'> COMING SOON</div>
+                      </div>
+                   </div>
+               </div>
               
-            </div>
+
+               <div className='Grid-Item'>
+            <div className="Card-Img Spotify"  ></div>     
+                   <div className='Card-Content'>
+                    <div className='Sub-Title'>
+                      <p className='Sub-Title-Cat'>REACT</p>
+                    </div>
+                    <div className='Card-Title'>Spotify Clone</div>
+
+                    <div className='Card-Info'>A music player application curated with my own playlists. Utilizes the Spotify API to fetch data.</div>
+                    <div className='Sml-Info-Wrapper'>
+                      <div className='Card-Info Sml'>MUSIC, FULLSTACK</div>
+                      <div className='Visit'> COMING SOON</div>
+                      </div>
+                   </div>
+               </div>
             </div>
             
 
@@ -157,7 +165,7 @@ const ctoScrollToComponent = () => {
 
       <Skills/>
 
-
+<div className='Border'></div>
      
       <div className="CTO" ref={ctoRef}>
       <div className="CTO-Wrapper">
@@ -224,17 +232,6 @@ const ctoScrollToComponent = () => {
 
       <div className='footer'>
             <div className='Footer-Title'>RJLStudios</div>
-            <ul className='Footer-UL'>
-                <li className='Footer-li' onClick={homeScrollToComponent} >HOME</li>
-                <li className='Footer-li Projects-Li' onClick={projectScrollToComponent} >PROJECTS</li>
-                <li className='Footer-li' onClick={ctoScrollToComponent} >CONTACT ME</li>
-            </ul>
-            <div className='Header-Icon-Bar'>
-                <div className='Header-Icons'>
-                <a href='https://twitter.com/home?lang=en' target='blank'><img className='Twitter'  href='https://github.com/RJLStudios' src='https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png' alt='Twitter icon'></img></a>
-                    <a href='https://github.com/RJLStudios' target='blank'><img className='Github' href='https://github.com/RJLStudios' target='blank' src='https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png' alt='Git icon'></img></a>
-                </div>
-            </div>
         </div>
     </div>
   );
