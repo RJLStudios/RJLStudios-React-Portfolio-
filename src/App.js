@@ -109,8 +109,21 @@ const ctoScrollToComponent = () => {
       
     </div>
       <div className='Projects' ref={projectRef}>
-            <div className='Projects-Grid Snaps-Inline'>
-            <div className='Grid-Item'>
+          <motion.section 
+          variants={{hidden: {opacity:0}, 
+          show:{
+            opacity:1,
+            transition: {
+              staggerChildren: 0.5,
+            },
+          },
+        }}
+        initial='hidden'
+        animate='show'
+           className='Projects-Grid Snaps-Inline'>
+            <motion.div 
+            variants={{hidden: {opacity:0}, show: {opacity:1}}}
+            className='Grid-Item'>
             <div className="Card-Img BeatStore"  ></div>     
                    <div className='Card-Content'>
                     <div className='Sub-Title'>
@@ -124,13 +137,15 @@ const ctoScrollToComponent = () => {
                       <a className='Project-Link' href='https://rjlstudios.github.io/react-beatstore/'><div className='Visit'> VISIT</div></a>
                       </div>
                    </div>
-               </div>
+               </motion.div>
 
-               <div className='Grid-Item'>
+               <motion.div 
+            variants={{hidden: {opacity:0}, show: {opacity:1}}}
+            className='Grid-Item'>
             <div className="Card-Img Knew98"  ></div>     
                    <div className='Card-Content'>
                     <div className='Sub-Title'>
-                      <p className='Sub-Title-Cat'>REACT</p>
+                      <p className='Sub-Title-Cat'>HTML   CSS   JAVASCRIPT</p>
                     </div>
                     <div className='Card-Title'>Knew 98' Website</div>
 
@@ -140,10 +155,12 @@ const ctoScrollToComponent = () => {
                       <div className='Visit'> COMING SOON</div>
                       </div>
                    </div>
-               </div>
+                   </motion.div>
               
 
-               <div className='Grid-Item'>
+                   <motion.div 
+            variants={{hidden: {opacity:0}, show: {opacity:1}}}
+            className='Grid-Item'>
             <div className="Card-Img Spotify"  ></div>     
                    <div className='Card-Content'>
                     <div className='Sub-Title'>
@@ -157,8 +174,8 @@ const ctoScrollToComponent = () => {
                       <div className='Visit'> COMING SOON</div>
                       </div>
                    </div>
-               </div>
-            </div>
+               </motion.div>
+            </motion.section>
             
 
         </div>
