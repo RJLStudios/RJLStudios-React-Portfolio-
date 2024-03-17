@@ -5,11 +5,11 @@ import emailjs from '@emailjs/browser'
 import Skills from './Components/Skills';
 import { BrowserRouter } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
-import CV from './Images/Richard Kelly - CV 22.02.24 (1).pdf';
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import 'animate.css';
 import Knew98 from './Images/Knew 98 draft.png';
 import { motion, useTransform, useScroll} from 'framer-motion';
+
 
 
 function App() {
@@ -37,10 +37,13 @@ const ctoScrollToComponent = () => {
   }
 
   const cvButtonDL = () => {
-    const link = document.createElement('a')
-    link.href = './Images/Richard Kelly - CV 22.02.24 (1).pdf';
-    link.download = './Images/Richard Kelly - CV 22.02.24 (1).pdf';
+    const cvUrl = process.env.PUBLIC_URL + '/Richard Kelly - CV 22.02.24 (1).pdf'; // Assuming your CV file is named 'your_cv_file.pdf' and placed in the public folder
+    const link = document.createElement('a');
+    link.href = cvUrl;
+    link.setAttribute('download', 'Richard Kelly.pdf');
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
   }
 
   const form = useRef();
@@ -101,7 +104,7 @@ const ctoScrollToComponent = () => {
             <a href='https://www.linkedin.com/in/richard-kelly-764602156/' className='Social animate__animated animate__fadeInRight'><FaLinkedinIn /></a>
             </div>
 
-            <a src='src\Images\Richard Kelly - CV 22.02.24 (1).pdf' download=''><button className="Link-A animate__animated animate__fadeInRight" onClick={cvButtonDL}>View Resume</button></a>
+            <a href><button className="Link-A animate__animated animate__fadeInRight" onClick={cvButtonDL}>View Resume</button></a>
 
           </div>
       </div>

@@ -103,7 +103,7 @@ body {
   color: var(--primary-cream);
   width: 100%;
   display: flex;
-  min-height: 100vh;
+  min-height: fit-content;
   padding-top: 70px;
 }
 
@@ -113,7 +113,7 @@ body {
 .Home-Bio {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: fit-content;
   text-align: center;
   justify-content: center;
   flex-direction: column;
@@ -179,7 +179,6 @@ transition-delay: 5s;
   font-family: 'Source Sans 3 Light';
   width: 320px;
   margin: auto;
-  line-height: 30px;
 }
 
 .Opaque {
@@ -250,7 +249,7 @@ transition-delay: 5s;
   background-color: black;
   color: white;
   padding-top: 70px;
-  font-family: 'Source Sans 3 Light';
+  font-family: 'Source Sans 3 Light', 'Quattrocento Sans Bold';
 }
 
 
@@ -370,13 +369,12 @@ padding: 5px;
 }
 
 .Card-Content {
-  Margin-top: 5px;
+  Margin-top: 10px;
 height: 30%;
 width: 100%;
 margin-bottom: auto;
 display: flex;
 flex-direction: column;
-border: 2px solid green;
 }
 
 .Sub-Title {
@@ -410,6 +408,7 @@ border: 2px solid green;
   display: flex;
   font-size: 14px;
   letter-spacing: 2px;
+  font-family: 'Source Sans 3 Light';
   font-weight: 400;
   margin-bottom: 25px
 }
@@ -424,10 +423,12 @@ border: 2px solid green;
 
 .Sml {
   font-size: 10px;
+  font-family: 'Source Sans 3 Light';
 }
 
 .Visit {
   font-size: 10px;
+  font-family: 'Source Sans 3 Light';
   width: fit-content;
 
 }
