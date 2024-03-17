@@ -274,8 +274,7 @@ margin: 0px auto;
  height: fit-content;
  width: 100%;
  gap: 2em;
-  padding: 2em 2em;
-border: 2px solid green;
+padding: 2em 2em;
 align-content: center;
 overflow-x: scroll;
 overscroll-behavior-inline: contain;
@@ -565,7 +564,8 @@ justify-content: center;
 }
 
 .form-control, .form-control-sm {
-  min-width: 45vw;
+  min-width: 500px;
+  max-width: 500px;
   padding: 20px;
   border: 1px solid var(--primary-cream);
   border-top: none;
@@ -595,7 +595,7 @@ label {
 display: flex;
 justify-content: center;
 height: 50px;
-margin: 20px auto;
+margin: 45px auto;
 }
 
 .button {
