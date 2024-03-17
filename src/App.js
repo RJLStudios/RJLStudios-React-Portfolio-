@@ -134,7 +134,7 @@ const ctoScrollToComponent = () => {
                     </div>
                     <div className='Card-Title'>Beatstore</div>
                     
-                    <div className='Card-Info'>An e-commerce music production marketplace that allows clients to license and purchase my beats.</div>
+                    <div className='Card-Info'>An e-commerce music production marketplace</div>
                     <div className='Sml-Info-Wrapper'>
                       <div className='Card-Info Sml'>MUSIC, E-COMMERCE </div>
                       <a className='Project-Link' href='https://rjlstudios.github.io/react-beatstore/'><div className='Visit'> VISIT</div></a>
@@ -152,7 +152,7 @@ const ctoScrollToComponent = () => {
                     </div>
                     <div className='Card-Title'>Knew 98' Website</div>
 
-                    <div className='Card-Info'>Knew 98's artist website showcasing current work and booking features</div>
+                    <div className='Card-Info'>Knew 98's artist website showcasing current work</div>
                     <div className='Sml-Info-Wrapper'>
                       <div className='Card-Info Sml'>MUSIC </div>
                       <div className='Visit'> COMING SOON</div>

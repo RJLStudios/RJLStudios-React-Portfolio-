@@ -247,7 +247,7 @@ transition-delay: 5s;
   background-color: black;
   color: white;
   padding-top: 70px;
-  font-family: 'Source Sans 3 Light', 'Quattrocento Sans Bold';
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -270,11 +270,12 @@ Margin-top: 10px;
 .Projects-Grid {
   display: flex;
 flex-direction: row;
+margin: 0px auto;
  height: fit-content;
  width: 100%;
  gap: 2em;
   padding: 2em 2em;
-
+border: 2px solid green;
 align-content: center;
 overflow-x: scroll;
 overscroll-behavior-inline: contain;
@@ -378,38 +379,38 @@ flex-direction: column;
 
 .Sub-Title {
   width: 100%;
-  height: 15%;
+  height: 20px;
   display: flex;
   align-items: center;
+
 }
 
 .Sub-Title-Cat{
-  height: 40%;
+  height: 20px;
   color: grey;
-  font: 14px;
+  font-size: 14px;
   letter-spacing: 1px;
-  font-family: 'Source Sans 3 Light';
+
+
 }
 
 .Card-Title {
-  height: fit-content;
+  height: 70px;
   display: flex;
   font-size: 37px;
   color: var(--primary-cream);
-  font-family: 'Source Sans 3 Light';
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .Card-Info {
   color: var(--primary-cream);
   width: 100%;
-  height: 18% ;
+  height: fit-content;
   display: flex;
   font-size: 14px;
   letter-spacing: 2px;
-  font-family: 'Source Sans 3 Light';
   font-weight: 400;
-  margin-bottom: 25px
+  margin-bottom: 20px;
 }
 
 .Sml-Info-Wrapper {
@@ -421,15 +422,19 @@ flex-direction: column;
 }
 
 .Sml {
-  font-size: 10px;
-  font-family: 'Source Sans 3 Light';
+  font-size: 9px;
+  font-weight: 200;
 }
 
 .Visit {
-  font-size: 10px;
-  font-family: 'Source Sans 3 Light';
+  font-size: 9px;
   width: fit-content;
+  transition: 300ms;
+}
 
+.Visit:hover {
+color: grey;
+transition: 300ms;
 }
 
  a{
