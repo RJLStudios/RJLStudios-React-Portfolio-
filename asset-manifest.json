@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/RJLStudios-React-Portfolio-/static/css/main.eff38eeb.css",
-    "main.js": "/RJLStudios-React-Portfolio-/static/js/main.976909df.js",
+    "main.css": "/RJLStudios-React-Portfolio-/static/css/main.b4728e4f.css",
+    "main.js": "/RJLStudios-React-Portfolio-/static/js/main.89499391.js",
     "static/media/ProdLuna.png": "/RJLStudios-React-Portfolio-/static/media/ProdLuna.d1600d29e064fda69d1c.png",
     "static/media/KNEW 98.png": "/RJLStudios-React-Portfolio-/static/media/KNEW 98.08b2f3a9275a82187887.png",
     "static/media/Knew 98 draft.png": "/RJLStudios-React-Portfolio-/static/media/Knew 98 draft.602b327e34d5b00b7229.png",
@@ -10,11 +10,11 @@
     "static/media/BUTLER_ULTRA_LIGHT.OTF": "/RJLStudios-React-Portfolio-/static/media/BUTLER_ULTRA_LIGHT.43a1a0b4c1c55041fee7.OTF",
     "static/media/Stardom-Regular.otf": "/RJLStudios-React-Portfolio-/static/media/Stardom-Regular.4e18f129f428b27ae9f0.otf",
     "index.html": "/RJLStudios-React-Portfolio-/index.html",
-    "main.eff38eeb.css.map": "/RJLStudios-React-Portfolio-/static/css/main.eff38eeb.css.map",
-    "main.976909df.js.map": "/RJLStudios-React-Portfolio-/static/js/main.976909df.js.map"
+    "main.b4728e4f.css.map": "/RJLStudios-React-Portfolio-/static/css/main.b4728e4f.css.map",
+    "main.89499391.js.map": "/RJLStudios-React-Portfolio-/static/js/main.89499391.js.map"
   },
   "entrypoints": [
-    "static/css/main.eff38eeb.css",
-    "static/js/main.976909df.js"
+    "static/css/main.b4728e4f.css",
+    "static/js/main.89499391.js"
   ]
 }
