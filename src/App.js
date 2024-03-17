@@ -81,7 +81,7 @@ const ctoScrollToComponent = () => {
             RICHARD KELLY
           </p>
 
-          <div className="FadeUp1 Delay1 Italic">
+          <div className="FadeUp1 Delay1 Intro-H1">
           Front-End  
           </div>
 

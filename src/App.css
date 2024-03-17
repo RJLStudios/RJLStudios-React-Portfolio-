@@ -39,8 +39,9 @@ body{
   src: local('Butler UltraLight'),
   url('./fonts/BUTLER_ULTRA_LIGHT.OTF') format('truetype');
 
-    
-
+  font-family: 'Source Sans 3 Light';
+  src: local('Source Sans 3 Light'),
+  url('./fonts/SANSSERIFCOLLECTION.TTF') format('truetype');
 } 
 .Italic {
   font-family: 'Cambria Italic';
@@ -97,14 +98,12 @@ body {
   color: var(--primary-cream);
 }
 
-
-
 .Homepage {
   background-color: black;
   color: var(--primary-cream);
   width: 100%;
   display: flex;
-  min-height: fit-content;
+  min-height: 100vh;
   padding-top: 70px;
 }
 
@@ -114,7 +113,7 @@ body {
 .Home-Bio {
   display: flex;
   width: 100%;
-  height: fit-content;
+  height: 100%;
   text-align: center;
   justify-content: center;
   flex-direction: column;
@@ -180,6 +179,7 @@ transition-delay: 5s;
   font-family: 'Source Sans 3 Light';
   width: 320px;
   margin: auto;
+  line-height: 30px;
 }
 
 .Opaque {
@@ -250,6 +250,7 @@ transition-delay: 5s;
   background-color: black;
   color: white;
   padding-top: 70px;
+  font-family: 'Source Sans 3 Light';
 }
 
 
@@ -369,12 +370,13 @@ padding: 5px;
 }
 
 .Card-Content {
-font-family: '';
+  Margin-top: 5px;
 height: 30%;
 width: 100%;
 margin-bottom: auto;
 display: flex;
 flex-direction: column;
+border: 2px solid green;
 }
 
 .Sub-Title {
@@ -385,7 +387,7 @@ flex-direction: column;
 }
 
 .Sub-Title-Cat{
-  height: 45%;
+  height: 40%;
   color: grey;
   font: 14px;
   letter-spacing: 1px;
@@ -408,7 +410,6 @@ flex-direction: column;
   display: flex;
   font-size: 14px;
   letter-spacing: 2px;
-  font-family: 'Source Sans 3 Light';
   font-weight: 400;
   margin-bottom: 25px
 }
@@ -423,12 +424,10 @@ flex-direction: column;
 
 .Sml {
   font-size: 10px;
-  font-family: 'Source Sans 3 Light';
 }
 
 .Visit {
   font-size: 10px;
-  font-family: 'Source Sans 3 Light';
   width: fit-content;
 
 }
