@@ -168,7 +168,7 @@ const ctoScrollToComponent = () => {
                     </div>
                     <div className='Card-Title'>Spotify Clone</div>
 
-                    <div className='Card-Info'>A music player application curated with my own playlists. Utilizes the Spotify API to fetch data.</div>
+                    <div className='Card-Info'> Utilizes the Spotify API to fetch data.</div>
                     <div className='Sml-Info-Wrapper'>
                       <div className='Card-Info Sml'>MUSIC, FULLSTACK</div>
                       <div className='Visit'> COMING SOON</div>
