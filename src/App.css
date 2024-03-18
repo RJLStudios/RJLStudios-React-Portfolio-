@@ -55,7 +55,7 @@ body{
   display: flex;
   height: 70px;
   align-items: center;
-  padding: 0px 20px;
+  padding: 0px 5vw;
   background-color: black;
   opacity: 80%;
   color: var(--primary-cream);
@@ -69,7 +69,7 @@ body{
   justify-content: center;
   align-items: center;
   margin-left: auto;
-  gap: 15px;
+  gap: 2em;
   list-style-type: none;
   letter-spacing: 2px;
   font-size: 11px;
@@ -742,13 +742,26 @@ li:hover {
 @media screen and (max-width:800px){
 
   .Homepage {
-    padding-top: 20px;
+    padding: 60px 0px;
+    
+  }
+  .Header-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 10px;
+    gap: 1em;
+    list-style-type: none;
+    letter-spacing: 2px;
+    font-size: 11px;
   }
 
  .PFP{
   visibility: hidden;
  }
  .form-control, .form-control-sm {
+  min-width: 300px;
   width: 90vw;
   border-radius: 5px;
   border-top: none;
@@ -756,6 +769,7 @@ li:hover {
   border-left: none;
   padding: 10px 0px;
 }
+
 
 .Header-links {
   width: 50%;
