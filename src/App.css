@@ -69,6 +69,7 @@ body{
   justify-content: center;
   align-items: center;
   margin-left: auto;
+
   gap: 2em;
   list-style-type: none;
   letter-spacing: 2px;
@@ -135,7 +136,7 @@ margin: auto;
 .Intro-H1 {
   font-size: 5rem;
   font-weight: 500;
-  font-family: 'Times New Roman Italic'
+  font-family:'Georgia', 'Times New Roman Italic', Times, serif;
   
   
 }
@@ -757,7 +758,10 @@ li:hover {
     list-style-type: none;
     letter-spacing: 2px;
     font-size: 11px;
-    padding: 0px 5vw;
+  }
+
+  .Navbar {
+    padding: 0em 2em;
   }
 
  .PFP{
