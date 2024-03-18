@@ -806,7 +806,7 @@ li:hover {
 
  .Card-Img {
  max-width: 100vw;
- height: 17rem;
+ height: 15rem;
  aspect-ratio: 16 / 9;
  }
 
@@ -829,6 +829,18 @@ li:hover {
     max-width: 100vw;
     height: 12rem;
     aspect-ratio: 16 / 9;
+    }
+
+    .Header-links {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      gap: 0.8rem;
+      list-style-type: none;
+      padding-right: 1rem;
+     
     }
 }
 
