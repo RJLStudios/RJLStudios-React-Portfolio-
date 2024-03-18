@@ -55,7 +55,7 @@ body{
   display: flex;
   height: 70px;
   align-items: center;
-  padding: 0px 5vw;
+  padding: 0px 1vw;
   background-color: black;
   opacity: 80%;
   color: var(--primary-cream);
@@ -72,7 +72,7 @@ body{
   gap: 2em;
   list-style-type: none;
   letter-spacing: 2px;
-  font-size: 11px;
+  font-size: 0.8rem;
 }
 
 
@@ -84,6 +84,7 @@ body{
 
 .Logo {
 font-weight: 300;
+font-size: 1.1rem;
 }
 
 
@@ -132,9 +133,9 @@ margin: auto;
 }
 
 .Intro-H1 {
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 500;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman Italic'
   
   
 }
@@ -173,7 +174,7 @@ transition-delay: 5s;
 
 
 .Intro-P {
-  font-size: 20px;
+  font-size: 1.3rem;
   font-weight: 100;
   padding-top: 12px;
   width: 320px;
@@ -181,7 +182,7 @@ transition-delay: 5s;
 }
 
 .Opaque {
-  font-size: 17px;
+  font-size: 1.1rem;
   opacity: 70%;
   letter-spacing: 1px;
   margin-top: 20px;
@@ -382,7 +383,7 @@ flex-direction: column;
 .Sub-Title-Cat{
   height: 20px;
   color: grey;
-  font-size: 12px;
+  font-size: 1rem;
   letter-spacing: 1px;
 
 
@@ -391,7 +392,7 @@ flex-direction: column;
 .Card-Title {
   height: 60px;
   display: flex;
-  font-size: 37px;
+  font-size: 2.3rem;
   color: var(--primary-cream);
   font-weight: 300;
 }
@@ -401,7 +402,7 @@ flex-direction: column;
   width: 100%;
   height: fit-content;
   display: flex;
-  font-size: 14px;
+  font-size: 0.9rem;
   letter-spacing: 2px;
   font-weight: 400;
   margin-bottom: 20px;
@@ -416,12 +417,12 @@ flex-direction: column;
 }
 
 .Sml {
-  font-size: 9px;
+  font-size: 0.7rem;
   font-weight: 200;
 }
 
 .Visit {
-  font-size: 9px;
+  font-size: 0.7rem;
   width: fit-content;
   transition: 300ms;
 }
@@ -499,7 +500,7 @@ margin:0rem 60px;
 margin:0rem 60px;
 display: flex;
 align-items: center;
-font-size: 75px;
+font-size: 5rem;
 }
 /*CTO STYLES*/
 .CTO {
@@ -525,7 +526,7 @@ padding: 0.5rem 1rem;
 }
 
 .CTO-Title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: 'Butler UltraLight';
   color: var(--primary-cream);
   width: 100%;
@@ -533,7 +534,7 @@ padding: 0.5rem 1rem;
 }
 
 .CTO-Para {
-font-size: 16px;
+font-size: 1.15rem;
 line-height: 1.75em;
 font-family:Arial, Helvetica, sans-serif;
 width: 200px;
@@ -568,6 +569,7 @@ justify-content: center;
   border-left: none;
   background-color: black;
   color: var(--primary-cream);
+  font-size: 1.1rem;
 }
 
 .form-outline label {
@@ -750,11 +752,12 @@ li:hover {
     justify-content: center;
     align-items: center;
     margin-left: auto;
-    padding-right: 10px;
+
     gap: 1em;
     list-style-type: none;
     letter-spacing: 2px;
     font-size: 11px;
+    padding: 0px 5vw;
   }
 
  .PFP{
