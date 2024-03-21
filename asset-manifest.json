@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/RJLStudios-React-Portfolio-/static/css/main.af130635.css",
-    "main.js": "/RJLStudios-React-Portfolio-/static/js/main.e0f2a826.js",
+    "main.css": "/RJLStudios-React-Portfolio-/static/css/main.13d41e00.css",
+    "main.js": "/RJLStudios-React-Portfolio-/static/js/main.00bcf04f.js",
     "static/media/ProdLuna.png": "/RJLStudios-React-Portfolio-/static/media/ProdLuna.d1600d29e064fda69d1c.png",
     "static/media/Knew 98 draft.png": "/RJLStudios-React-Portfolio-/static/media/Knew 98 draft.602b327e34d5b00b7229.png",
     "static/media/KNEW 98 (2).png": "/RJLStudios-React-Portfolio-/static/media/KNEW 98 (2).f337d28ec576addbc654.png",
     "index.html": "/RJLStudios-React-Portfolio-/index.html",
-    "main.af130635.css.map": "/RJLStudios-React-Portfolio-/static/css/main.af130635.css.map",
-    "main.e0f2a826.js.map": "/RJLStudios-React-Portfolio-/static/js/main.e0f2a826.js.map"
+    "main.13d41e00.css.map": "/RJLStudios-React-Portfolio-/static/css/main.13d41e00.css.map",
+    "main.00bcf04f.js.map": "/RJLStudios-React-Portfolio-/static/js/main.00bcf04f.js.map"
   },
   "entrypoints": [
-    "static/css/main.af130635.css",
-    "static/js/main.e0f2a826.js"
+    "static/css/main.13d41e00.css",
+    "static/js/main.00bcf04f.js"
   ]
 }
