@@ -20,11 +20,11 @@ body{
 }
 
 /*FONT STYLES*/
-
+/*
 @font-face {
- /* font-family: 'Playfair Display Black';
+ font-family: 'Playfair Display Black';
   src: local('Playfair Display Black'),
-  url('./fonts/PLAYFAIRDISPLAY-VARIABLEFONT_WGHT.TTF') format('truetype');*/
+  url('./fonts/PLAYFAIRDISPLAY-VARIABLEFONT_WGHT.TTF') format('truetype');
 
   font-family: 'Sans Serif';
   src: local('Sans Serif'),
@@ -43,10 +43,7 @@ body{
   src: local('Source Sans 3 Light'),
   url('./fonts/SANSSERIFCOLLECTION.TTF') format('truetype');
 } 
-.Italic {
-  font-family: 'Cambria Italic';
-  font-size: 80px;
-}
+*/
 
 
 /*HEADER STYLES*/
@@ -68,11 +65,37 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  gap: 2em;
+  width: fit-content;
+  gap: 1.1em;
   list-style-type: none;
   letter-spacing: 2px;
   font-size: 0.8rem;
+  margin-left: auto;
+}
+
+.hover-underline-animation {
+ 
+  display: inline-block;
+  position: relative;
+
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.7px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-cream);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 
@@ -134,10 +157,10 @@ margin: auto;
 .Intro-H1 {
   font-size: 5rem;
   font-weight: 500;
-  font-family:'Georgia', 'Times New Roman Italic', Times, serif;
-  
-  
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
 }
+
 .FadeUp{
   animation:fadeInUp 1s ease backwards;}
 
@@ -181,11 +204,12 @@ transition-delay: 5s;
 }
 
 .Opaque {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   opacity: 70%;
   letter-spacing: 1px;
   margin-top: 20px;
   --animate-duration:1.5s;
+  font-weight: 400;
 }
 
 
@@ -193,7 +217,7 @@ transition-delay: 5s;
   font-size: 25px;
   gap: 15px;
   height: fit-content;
-  padding: 0px 10px;
+  padding: 0px 0.5em;
   display: flex;
   justify-content: space-between;
 }
@@ -356,6 +380,7 @@ flex-direction: column;
   font-size: 2.3rem;
   color: var(--primary-cream);
   font-weight: 300;
+  
 }
 
 .Card-Info {
@@ -491,6 +516,8 @@ padding: 0.5rem 1rem;
   font-weight: 300;
   color: var(--primary-cream);
   width: 100%;
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
 
 }
 
@@ -708,7 +735,6 @@ li:hover {
     justify-content: center;
     align-items: center;
     margin-left: auto;
-
     gap: 1em;
     list-style-type: none;
     letter-spacing: 2px;
@@ -716,7 +742,7 @@ li:hover {
   }
 
   .Navbar {
-    padding: 0em 2em;
+    padding: 0em 1em;
   }
 
  .PFP{
@@ -732,17 +758,6 @@ li:hover {
   padding: 10px 0px;
 }
 
-
-.Header-links {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  gap: 18px;
-  list-style-type: none;
- 
-}
 
 .Projects-Grid {
   display: flex;
@@ -793,8 +808,3 @@ li:hover {
 }
 
 
-/*PFP DIV */
-
-/*<div className='Profile-Pic'>
-<img className='PFP' src='https://drive.google.com/uc?export=download&id=1zlBCGFbNp9gjUwVuCQiPtQutpC_trttJ' alt='pfp alt'></img>
-</div>*/

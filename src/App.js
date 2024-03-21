@@ -67,8 +67,8 @@ const ctoScrollToComponent = () => {
        <h3 className='Logo animate__animated animate__fadeInLeft'>RJLStudios</h3>
 
          <ul className='Header-links animate__animated animate__fadeInLeft'>
-            <li className='Projects-btn' onClick={projectScrollToComponent}>PROJECTS</li>
-            <li className='contact-btn' onClick={ctoScrollToComponent}>CONTACT</li>
+            <li className='Projects-btn hover-underline-animation' onClick={projectScrollToComponent}>PROJECTS</li>
+            <li className='Contact-btn hover-underline-animation' onClick={ctoScrollToComponent}>CONTACT</li>
          </ul>
 
          <div className='Header-progress'>
