@@ -152,8 +152,8 @@ min-width: 100%;
 .Intro-H1 {
   font-size: 5rem;
   font-weight: 500;
-  font-family:  Georgia, 'Times New Roman', Times, serif;
-  font-style: italic;
+  font-family: 'Georgia', Times, 'Times New Roman', serif;
+  font-style: Italic;
 }
 
 .FadeUp{
@@ -213,9 +213,9 @@ transition-delay: 5s;
   display: flex;
   font-size: 25px;
   gap: 15px;
-  height: 10vh;
-  margin: auto 0.2em;
-  display: flex;
+  height: fit-content;
+  margin: 0em 0.2em;
+  align-content: center;
   justify-content: space-between;
   
 }
@@ -268,7 +268,6 @@ transition-delay: 5s;
   background-color: black;
   color: white;
   padding-top: 70px;
-
 }
 
 
@@ -290,7 +289,6 @@ padding: 2em 2em;
 align-content: center;
 overflow-x: scroll;
 overscroll-behavior-inline: contain;
-
 }
 
 .Projects-Grid::-webkit-scrollbar {
@@ -397,7 +395,6 @@ flex-direction: column;
   display: flex;
   letter-spacing: 2px;
   font-weight: 100;
-
 }
 
 .Sml {
@@ -522,7 +519,7 @@ padding: 0.5rem 1rem;
 .CTO-Para {
 font-size: 1.15rem;
 line-height: 1.75em;
-font-family:Arial, Helvetica, sans-serif;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 width: 350px;
 margin: 0 auto;
 }
@@ -589,7 +586,7 @@ margin: 45px auto;
   border: 1px solid var(--primary-cream);
   color: var(--primary-cream);
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 /*FOOTER STYLES */
@@ -730,6 +727,7 @@ li:hover {
     letter-spacing: 2px;
     font-size: 0.8rem;
     margin-left: auto;
+    
   
   }
   

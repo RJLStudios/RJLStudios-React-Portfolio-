@@ -185,7 +185,7 @@ function App() {
                     }}
                     initial="hidden"
                     animate={mainControls}
-                    transition={{ duration: 0.5, delay: 0.5 }}
+                    transition={{ duration: 0.5, delay: 0.35 }}
           className="Projects-Grid Snaps-Inline"
         >
           <div
@@ -208,7 +208,7 @@ function App() {
                   className="Project-Link"
                   href="https://rjlstudios.github.io/react-beatstore/"
                 >
-                  <div className="Visit"> VISIT</div>
+                  <div className="Visit hover-underline-animation"> VISIT</div>
                 </a>
               </div>
             </div>
@@ -246,8 +246,8 @@ function App() {
                       visible: { opacity: 1, y: 0 },
                     }}
                     initial="hidden"
-                    animate={mainControls}
-                    transition={{ duration: 0.5, delay: 0.5 }}
+                    animate='visible'
+                    transition={{ duration: 0.5, delay: 0.3 }}
         className="CTO-Wrapper">
           <div className="CTO-bio">
             <h2 className="CTO-Title">Send me a message!</h2>
