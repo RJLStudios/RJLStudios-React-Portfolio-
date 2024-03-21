@@ -77,14 +77,13 @@ body{
 
 
 .contact-btn {
-  border: 1px solid white;
   padding: 5px;
   border-radius: 8px;
 }
 
 .Logo {
 font-weight: 300;
-font-size: 1.1rem;
+font-size: 1.2rem;
 }
 
 
@@ -191,7 +190,7 @@ transition-delay: 5s;
 
 
 .Intro-links {
-  font-size: 18px;
+  font-size: 25px;
   gap: 15px;
   height: fit-content;
   padding: 0px 10px;
@@ -202,7 +201,7 @@ transition-delay: 5s;
 .Link-A {
   font-size: 16px;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: auto 0;
   border: 1px solid var(--primary-cream);
   border-radius: 20px;
   background-color: black;
@@ -220,7 +219,7 @@ transition-delay: 5s;
 
 .Social {
   color: var(--primary-cream);
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .Social:hover {
@@ -251,12 +250,6 @@ transition-delay: 5s;
 }
 
 
-.Projects-Header {
-justify-content: center;
-font-size: 36px;
-height: 70px;
-display: flex;
-}
 
 .Projects-Bio {
 Margin-top: 10px;
@@ -266,6 +259,7 @@ Margin-top: 10px;
 .Projects-Grid {
   display: flex;
 flex-direction: row;
+justify-content: center;
 margin: 0px auto;
  height: fit-content;
  width: 100%;
@@ -306,40 +300,6 @@ width: 30px;
   scroll-snap-align: start;
 }
 
-.BeatStore {
-background-image: url(./Images/ProdLuna.png);
-height: 100%;
-inline-size: 100%;
-aspect-ratio: 16/9;
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center center; 
-border-radius: 10px;
-color: var(--);
-}
-
-.Knew98{
-  background-image: url(./Images/KNEW\ 98.png);
-  height: 100%;
-  aspect-ratio: 16/9;
-  inline-size: 100%;
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center center; 
-border-radius: 10px;
-color: var(--);
-}
-
-.Spotify {
-  background-image: url(./Images/Spotify.png);
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center; 
-  border-radius: 10px;
-  color: var(--);
-}
 
 .Grid-Item {
   display: flex;
@@ -362,6 +322,8 @@ padding: 5px;
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 10px;
+  margin: auto;
 }
 
 .Card-Content {
@@ -386,8 +348,6 @@ flex-direction: column;
   color: grey;
   font-size: 1rem;
   letter-spacing: 1px;
-
-
 }
 
 .Card-Title {
@@ -538,7 +498,7 @@ padding: 0.5rem 1rem;
 font-size: 1.15rem;
 line-height: 1.75em;
 font-family:Arial, Helvetica, sans-serif;
-width: 200px;
+width: 350px;
 margin: 0 auto;
 }
 
@@ -551,6 +511,7 @@ text-align: center;
 min-width: 50%;
 height: fit-content;
 margin:  50px auto;
+
 }
 
 .Input-field {
@@ -680,12 +641,6 @@ height: 55px;
   transition: 400ms;
 }
 
-.contact-btn:hover {
-  background-color: white;
-  color: black;
-  transition: 250ms;
-}
-
  .Card-Btn:hover, .Src-Btn:hover {
   background-color: white;
   color: black;
@@ -802,14 +757,7 @@ li:hover {
  min-width: 90vw;
  height: fit-content;
 
- }
-
- .Card-Img {
- max-width: 100vw;
- height: 15rem;
- aspect-ratio: 16 / 9;
- }
-
+ } 
  .CTO-Wrapper {
   flex-direction: column;
  }

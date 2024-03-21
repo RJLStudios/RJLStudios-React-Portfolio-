@@ -9,6 +9,8 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import 'animate.css';
 import Knew98 from './Images/Knew 98 draft.png';
 import { motion, useTransform, useScroll} from 'framer-motion';
+import luna from './Images/ProdLuna.png';
+import knew98 from './Images/KNEW 98 (2).png';
 
 
 
@@ -65,7 +67,6 @@ const ctoScrollToComponent = () => {
        <h3 className='Logo animate__animated animate__fadeInLeft'>RJLStudios</h3>
 
          <ul className='Header-links animate__animated animate__fadeInLeft'>
-            <li className='Home-btn' onClick={homeScrollToComponent}>HOME</li>
             <li className='Projects-btn' onClick={projectScrollToComponent}>PROJECTS</li>
             <li className='contact-btn' onClick={ctoScrollToComponent}>CONTACT</li>
          </ul>
@@ -127,7 +128,7 @@ const ctoScrollToComponent = () => {
             <motion.div 
             variants={{hidden: {opacity:0}, show: {opacity:1}}}
             className='Grid-Item'>
-            <div className="Card-Img BeatStore"  ></div>     
+            <img className="Card-Img" src={luna} ></img>     
                    <div className='Card-Content'>
                     <div className='Sub-Title'>
                       <p className='Sub-Title-Cat'>REACT</p>
@@ -145,7 +146,7 @@ const ctoScrollToComponent = () => {
                <motion.div 
             variants={{hidden: {opacity:0}, show: {opacity:1}}}
             className='Grid-Item'>
-            <div className="Card-Img Knew98"  ></div>     
+                        <img className="Card-Img" src={knew98} ></img>      
                    <div className='Card-Content'>
                     <div className='Sub-Title'>
                       <p className='Sub-Title-Cat'>HTML   CSS   JAVASCRIPT</p>
@@ -161,23 +162,7 @@ const ctoScrollToComponent = () => {
                    </motion.div>
               
 
-                   <motion.div 
-            variants={{hidden: {opacity:0}, show: {opacity:1}}}
-            className='Grid-Item'>
-            <div className="Card-Img Spotify"  ></div>     
-                   <div className='Card-Content'>
-                    <div className='Sub-Title'>
-                      <p className='Sub-Title-Cat'>REACT</p>
-                    </div>
-                    <div className='Card-Title'>Spotify Clone</div>
-
-                    <div className='Card-Info'> Utilizes the Spotify API to fetch data.</div>
-                    <div className='Sml-Info-Wrapper'>
-                      <div className='Card-Info Sml'>MUSIC, FULLSTACK</div>
-                      <div className='Visit'> COMING SOON</div>
-                      </div>
-                   </div>
-               </motion.div>
+      
             </motion.section>
             
 
