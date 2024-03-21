@@ -78,10 +78,10 @@ const ctoScrollToComponent = () => {
         </div>
 
         <div  className="Homepage" id="Homepage">
-      <div className="Home-Bio">
+      
         <div className="Intro-text ">
-
-        <p className="Intro-P Opaque FadeUp Delay1">
+<div className='Text-Wrapper'>
+        <p className="Intro-P Opaque Delay1">
             RICHARD KELLY
           </p>
 
@@ -96,8 +96,7 @@ const ctoScrollToComponent = () => {
           <p className="Intro-P FadeUp2 Delay2">
            Combining passions to create beautiful and engaging digital experiences in London, United Kingdom.
           </p>
-
-          
+          </div>
         </div>
         <div className="Intro-links">
         <div className='Social-Wrapper'>
@@ -108,8 +107,7 @@ const ctoScrollToComponent = () => {
             <a href><button className="Link-A animate__animated animate__fadeInRight" onClick={cvButtonDL}>View Resume</button></a>
 
           </div>
-      </div>
-
+     
       
     </div>
       <div className='Projects' ref={projectRef}>

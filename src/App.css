@@ -59,6 +59,7 @@ body{
   width: 100%;
   position: fixed;
   z-index: 3;
+
 }
 
 .Header-links {
@@ -71,6 +72,7 @@ body{
   letter-spacing: 2px;
   font-size: 0.8rem;
   margin-left: auto;
+  height: 10vh;
 }
 
 .hover-underline-animation {
@@ -125,33 +127,26 @@ body {
   color: var(--primary-cream);
   width: 100%;
   display: flex;
-  min-height: fit-content;
-  padding-top: 70px;
+  align-items: space-around;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--primary-cream);
 }
 
  .Projects-Card {
   padding: 0px 13vw;
 }
 
-.Home-Bio {
-  display: flex;
-  width: 100%;
-  height: fit-content;
-  text-align: center;
-  justify-content: center;
-  flex-direction: column;
-  color: var(--primary-cream);
-}
 
 .Intro-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  height: fit-content;
   padding: 30px 15px;
-margin: auto;
-  
+min-height: 90vh;
+min-width: 100%;
 }
 
 .Intro-H1 {
@@ -201,6 +196,7 @@ transition-delay: 5s;
   padding-top: 12px;
   width: 320px;
   margin: auto;
+  
 }
 
 .Opaque {
@@ -214,12 +210,14 @@ transition-delay: 5s;
 
 
 .Intro-links {
+  display: flex;
   font-size: 25px;
   gap: 15px;
-  height: fit-content;
-  padding: 0px 0.5em;
+  height: 10vh;
+  margin: auto 0.2em;
   display: flex;
   justify-content: space-between;
+  
 }
 
 .Link-A {
@@ -237,7 +235,7 @@ transition-delay: 5s;
  height: 100%;
  width: fit-content;
  display: flex;
- margin: auto 0;
+ align-items: center;
  gap: 10px;
 }
 
@@ -695,19 +693,10 @@ li:hover {
 
 
 
-.Homepage {
-  background-color: black;
-  height: 20%;
-  width: 100%;
-  display: flex;
-  color: white;
-}
-
 .Intro-text {
-  height: 100%;
-  width: 100%;
+ 
   max-width: 700px;
-  padding: 30px 0px;
+  padding: 10px 0px;
 }
 
 .Input-field {
@@ -728,18 +717,22 @@ li:hover {
 
   .Homepage {
     padding: 60px 0px;
+    min-height: 100vh;
     
   }
   .Header-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: auto;
+    width: fit-content;
     gap: 1em;
     list-style-type: none;
     letter-spacing: 2px;
-    font-size: 11px;
+    font-size: 0.8rem;
+    margin-left: auto;
+  
   }
+  
 
   .Navbar {
     padding: 0em 1em;
@@ -794,17 +787,6 @@ li:hover {
     aspect-ratio: 16 / 9;
     }
 
-    .Header-links {
-      width: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: auto;
-      gap: 0.8rem;
-      list-style-type: none;
-      padding-right: 1rem;
-     
-    }
 }
 
 
