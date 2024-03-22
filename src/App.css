@@ -217,7 +217,6 @@ transition-delay: 5s;
   margin: 0em 0.2em;
   align-content: center;
   justify-content: space-between;
-  
 }
 
 .Link-A {
@@ -402,7 +401,7 @@ flex-direction: column;
   font-weight: 200;
 }
 
-.Visit {
+.Visit, .Coming-Soon {
   font-size: 0.7rem;
   width: fit-content;
   transition: 300ms;
@@ -412,6 +411,7 @@ flex-direction: column;
 color: grey;
 transition: 300ms;
 }
+
 
  a{
   text-decoration: none;

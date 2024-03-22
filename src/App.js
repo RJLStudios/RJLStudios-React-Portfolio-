@@ -225,7 +225,7 @@ function App() {
               </div>
               <div className="Sml-Info-Wrapper">
                 <div className="Card-Info Sml">MUSIC </div>
-                <div className="Visit"> COMING SOON</div>
+                <div className="Coming-Soon"> COMING SOON</div>
               </div>
             </div>
           </div>
