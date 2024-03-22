@@ -3,11 +3,8 @@ import "./App.css";
 import emailjs from "@emailjs/browser";
 /*import CTO from './Components/CTO';*/
 import Skills from "./Components/Skills";
-import { BrowserRouter } from "react-router-dom";
-import { HashLink as Link } from "react-router-hash-link";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import "animate.css";
-import Knew98 from "./Images/Knew 98 draft.png";
 import {
   motion,
   useTransform,
@@ -15,8 +12,8 @@ import {
   useInView,
   useAnimation,
 } from "framer-motion";
-import luna from "./Images/ProdLuna.png";
-import knew98 from "./Images/KNEW 98 (2).png";
+import luna from "./Images/ProdLuna.jpeg";
+import knew98 from "./Images/KNEW 98 (2).jpeg";
 import { useEffect } from "react";
 
 function App() {
@@ -192,7 +189,7 @@ function App() {
 
             className="Grid-Item"
           >
-            <img className="Card-Img" src={luna}></img>
+            <img className="Card-Img" src={luna} loading="lazy"></img>
             <div className="Card-Content">
               <div className="Sub-Title">
                 <p className="Sub-Title-Cat">REACT</p>
@@ -216,7 +213,7 @@ function App() {
           <div
             className="Grid-Item"
           >
-            <img className="Card-Img" src={knew98}></img>
+            <img className="Card-Img" src={knew98} loading="lazy"></img>
             <div className="Card-Content">
               <div className="Sub-Title">
                 <p className="Sub-Title-Cat">HTML CSS JAVASCRIPT</p>
@@ -246,7 +243,7 @@ function App() {
                       visible: { opacity: 1, y: 0 },
                     }}
                     initial="hidden"
-                    animate='visible'
+                    animate={mainControls}
                     transition={{ duration: 0.5, delay: 0.3 }}
         className="CTO-Wrapper">
           <div className="CTO-bio">
