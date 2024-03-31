@@ -3,6 +3,7 @@ import "./App.css";
 import emailjs from "@emailjs/browser";
 /*import CTO from './Components/CTO';*/
 import Skills from "./Components/Skills";
+import About from "./Components/About";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import "animate.css";
 import {
@@ -130,11 +131,11 @@ function App() {
             className="Text-Wrapper
 "
           >
-            <p className="Intro-P Opaque ">RICHARD KELLY</p>
+            <p className="Intro-P Opaque "></p>
 
-            <div className=" Intro-H1">Front-End</div>
+            <div className=" Intro-H1">Richard Kelly</div>
 
-            <h1 className="Intro-H1">Web Developer</h1>
+            <h1 className="Intro-H1">Creative Developer</h1>
 
             <p className="Intro-P">
               Combining passions to create beautiful and engaging digital
@@ -173,7 +174,19 @@ function App() {
         </motion.div>
       </div>
 
+      <About />
+
       <div className="Projects" ref={projectRef}>
+      <div className='Text-Wrapper-Overflow'>
+      <motion.div 
+         variants={{
+          hidden: { opacity: 0, y: 75 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial="hidden"
+        animate={mainControls}
+        transition={{ duration: 0.5, delay: 0.15 }}
+      className="Projects-Title">PROJECTS.</motion.div></div>
         <motion.div
         ref={animateRef}
                     variants={{
@@ -185,8 +198,8 @@ function App() {
                     transition={{ duration: 0.5, delay: 0.35 }}
           className="Projects-Grid Snaps-Inline"
         >
-          <div
 
+          <div
             className="Grid-Item"
           >
             <img className="Card-Img" src={luna} loading="lazy"></img>
@@ -234,7 +247,17 @@ function App() {
 
       <Skills />
 
-      <div className="Border"></div>
+      <div className="Border">
+        <motion.div 
+        className="Border-Fill"
+       initial={{scaleX:0}}
+        animate={{scaleX:1}}
+        transition={{
+          duration: 1,
+          delay:1,
+          ease: 'linear'
+        }}></motion.div>
+      </div>
 
       <div className="CTO" ref={ctoRef}>
         <motion.div
