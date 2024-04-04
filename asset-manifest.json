@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/RJLStudios-React-Portfolio-/static/css/main.400c9f2b.css",
+    "main.css": "/RJLStudios-React-Portfolio-/static/css/main.f6177ddc.css",
     "main.js": "/RJLStudios-React-Portfolio-/static/js/main.38716eb6.js",
     "static/media/ProdLuna.jpeg": "/RJLStudios-React-Portfolio-/static/media/ProdLuna.c02111510d42b0862743.jpeg",
     "static/media/IMG_2610.jpg": "/RJLStudios-React-Portfolio-/static/media/IMG_2610.2c00903f50c6c3cf01f1.jpg",
     "static/media/KNEW 98 (2).jpeg": "/RJLStudios-React-Portfolio-/static/media/KNEW 98 (2).b61e2699d5d4a6a34791.jpeg",
     "index.html": "/RJLStudios-React-Portfolio-/index.html",
-    "main.400c9f2b.css.map": "/RJLStudios-React-Portfolio-/static/css/main.400c9f2b.css.map",
+    "main.f6177ddc.css.map": "/RJLStudios-React-Portfolio-/static/css/main.f6177ddc.css.map",
     "main.38716eb6.js.map": "/RJLStudios-React-Portfolio-/static/js/main.38716eb6.js.map"
   },
   "entrypoints": [
-    "static/css/main.400c9f2b.css",
+    "static/css/main.f6177ddc.css",
     "static/js/main.38716eb6.js"
   ]
 }
