@@ -52,7 +52,7 @@ function App() {
 
   const cvButtonDL = () => {
     const cvUrl =
-      process.env.PUBLIC_URL + "/Richard Kelly - CV 22.02.24 (1).pdf"; // Assuming your CV file is named 'your_cv_file.pdf' and placed in the public folder
+      process.env.PUBLIC_URL + "/Richard Kelly - CV 04.04.24.pdf"; 
     const link = document.createElement("a");
     link.href = cvUrl;
     link.setAttribute("download", "Richard Kelly.pdf");
