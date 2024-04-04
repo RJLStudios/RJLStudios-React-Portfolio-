@@ -417,7 +417,16 @@ height: fit-content;
 @media screen and (min-width:900px){
   .About {
     max-height: 850px;
+
       }
+}
+
+@media screen and (max-width:900px) {
+ .About {
+  max-width: 1000px;
+  border: 2px solid green;
+  margin: 0px auto;  
+ } 
 }
 
 
