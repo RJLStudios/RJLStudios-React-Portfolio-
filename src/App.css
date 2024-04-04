@@ -408,7 +408,6 @@ height: fit-content;
     font-size: 1em;
     display: flex;
     justify-content: center;
-
     margin: 0;
   }
 
@@ -421,9 +420,9 @@ height: fit-content;
       }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1000px) {
  .About {
-  max-width: 1000px;
+  max-width: 1300px;
   border: 2px solid green;
   margin: 0px auto;  
  } 
@@ -468,13 +467,19 @@ flex-direction: row;
 justify-content: center;
 margin: 0px auto;
  height: fit-content;
- width: 100%;
+ width: fit-content;
  gap: 2em;
 padding: 3em 0em;
 align-content: center;
 overflow-x: scroll;
 overscroll-behavior-inline: contain;
+border: 2px solid green;
+}
 
+@media screen and (max-width: 1000px ){
+  .Projects-Grid {
+    justify-content: start;
+  }
 }
 
 .Projects-Grid::-webkit-scrollbar {
