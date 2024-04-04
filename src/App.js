@@ -199,8 +199,9 @@ function App() {
           className="Projects-Grid Snaps-Inline"
         >
 
-          <div
+          <a
             className="Grid-Item"
+            href="https://rjlstudios.github.io/react-beatstore/"
           >
             <img className="Card-Img" src={luna} loading="lazy"></img>
             <div className="Card-Content">
@@ -222,7 +223,8 @@ function App() {
                 </a>
               </div>
             </div>
-          </div>
+          </a>
+
           <div
             className="Grid-Item"
           >

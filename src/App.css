@@ -420,11 +420,11 @@ height: fit-content;
       }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (min-width:1000px) {
  .About {
   max-width: 1300px;
-  border: 2px solid green;
   margin: 0px auto;  
+  border: 2px solid green;
  } 
 }
 
@@ -447,6 +447,7 @@ height: fit-content;
 }
 
 .Projects-Title{
+  width: 100%;
   font-size: 4rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: italic;
@@ -473,15 +474,16 @@ padding: 3em 0em;
 align-content: center;
 overflow-x: scroll;
 overscroll-behavior-inline: contain;
-border: 2px solid green;
 }
 
 @media screen and (max-width: 1000px ){
-  .Projects-Grid {
-    justify-content: start;
-  }
+ 
+.Projects-Title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+}
 .Projects-Grid::-webkit-scrollbar {
   display: flex;
   justify-content: center;
