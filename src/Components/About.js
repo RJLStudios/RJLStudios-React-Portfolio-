@@ -34,6 +34,24 @@ function About(){
 
             <div className='Content-Wrapper'>
                 <div className='Content-Text' ref={animateRef}>
+
+                <div className='About-Me'>
+                    <div
+                     className='Wrap'>
+                        <motion.div
+                         variants={{
+                            hidden: {y:100},
+                            visible: {y:0},
+                         }}
+                         initial='hidden'
+                          animate={mainControls}
+                          transition={{
+                            duration: 0.6
+                          }}
+                        >ABOUT ME.</motion.div>      
+                    </div>
+                </div>
+                
                 <div className='Text-Wrapper-Overflow'>
                  <motion.div 
                  variants={{
@@ -108,22 +126,7 @@ function About(){
             ></motion.img>
             </div>
 
-                <div className='About-Me'>
-                    <div
-                     className='Wrap'>
-                        <motion.div
-                         variants={{
-                            hidden: {y:100},
-                            visible: {y:0},
-                         }}
-                         initial='hidden'
-                          animate={mainControls}
-                          transition={{
-                            duration: 0.6
-                          }}
-                        >ABOUT ME.</motion.div>      
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
