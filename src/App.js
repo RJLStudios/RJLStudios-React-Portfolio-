@@ -14,7 +14,7 @@ import {
   useAnimation,
 } from "framer-motion";
 import luna from "./Images/ProdLuna.jpeg";
-import knew98 from "./Images/KNEW 98 (2).jpeg";
+import knew98 from "./Images/KNEW9814.04.jpg";
 import { useEffect } from "react";
 
 function App() {
@@ -205,16 +205,15 @@ function App() {
           >
             <img className="Card-Img" src={luna} loading="lazy"></img>
             <div className="Card-Content">
-              <div className="Sub-Title">
-                <p className="Sub-Title-Cat">REACT</p>
-              </div>
-              <div className="Card-Title">Beatstore</div>
+          
+              <div className="Card-Title">BEATSTORE</div>
 
-              <div className="Card-Info">
-                An e-commerce music production marketplace
-              </div>
               <div className="Sml-Info-Wrapper">
-                <div className="Card-Info Sml">MUSIC, E-COMMERCE </div>
+                <ul className="Card-Info">
+                  <li className='Info-Tag'>MUSIC</li>
+                  <li className='Info-Tag'>E-COMMERCE</li>  
+                  <li className='Inverse'>2023</li>
+                  </ul>
                 <a
                   className="Project-Link"
                   href="https://rjlstudios.github.io/react-beatstore/"
@@ -230,17 +229,16 @@ function App() {
           >
             <img className="Card-Img" src={knew98} loading="lazy"></img>
             <div className="Card-Content">
-              <div className="Sub-Title">
-                <p className="Sub-Title-Cat">HTML CSS JAVASCRIPT</p>
-              </div>
-              <div className="Card-Title">Knew 98' Website</div>
-
-              <div className="Card-Info">
-                Knew 98's artist website showcasing current work
-              </div>
+    
+              <div className="Card-Title">KNEW 98 WEBSITE</div>
               <div className="Sml-Info-Wrapper">
-                <div className="Card-Info Sml">MUSIC </div>
-                <div className="Coming-Soon"> COMING SOON</div>
+                <ul className="Card-Info">
+                  <li className='Info-Tag'>MUSIC</li>
+                  <li className='Info-Tag'>E-COMMERCE</li> 
+                  <li className=' Inverse'>2024</li>
+                   </ul>
+
+                  <div className="Visit">COMING SOON </div>
               </div>
             </div>
           </div>
