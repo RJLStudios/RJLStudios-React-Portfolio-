@@ -469,7 +469,7 @@ height: fit-content;
   font-style: italic;
   color: var(--primary-cream);
   width: 100%;
-  margin: 0.25em 0em;
+  margin: 1em 0em 0.5em 0em;
 }
 
 
@@ -484,6 +484,7 @@ flex-direction: row;
 justify-content: space-between;
  height: 100%;
  width: 100%;
+ gap: 2.5em;
 
 }
 
@@ -514,16 +515,6 @@ display: flex;
 flex-direction: column;
 }
 
-
-@media screen and (max-width: 500px ){
-
-  .Projects-Title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  }
 
 
 .Card-Title {
@@ -562,6 +553,8 @@ flex-direction: column;
   
 }
 
+
+
 .Sml-Info-Wrapper {
   color: var(--primary-cream);
   display: flex;
@@ -571,24 +564,46 @@ flex-direction: column;
   flex-direction: row;
   justify-content: space-between;
 
+
 }
 
 
 .Info-Tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 0.7rem;
   font-weight: 200;
   list-style-type: none;
   padding: 5px 8px;
   border: 0.9px solid var(--primary-cream);
   border-radius: 15px;
-  
 }
+
+
+@media screen and (max-width: 800px ){
+
+  .Projects-Title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+ .Info-Tag {
+  font-size: 0.6em;
+  padding: 4px 6px;
+ }
+  }
+
 
 
 .Visit, .Coming-Soon {
   font-size: 0.7rem;
   width: fit-content;
+  height: fit-content;
   transition: 300ms;
+  margin: auto 0;
 }
 
 .Visit:hover {
