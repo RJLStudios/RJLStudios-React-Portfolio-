@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 /*import CTO from './Components/CTO';*/
 import Skills from "./Components/Skills";
 import About from "./Components/About";
+import WarpEffect from './Components/WarpEffect'; 
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import "animate.css";
 import {
@@ -21,6 +22,10 @@ function App() {
   const homeRef = useRef(null);
   const projectRef = useRef(null);
   const ctoRef = useRef(null);
+
+  //IMAGE WARP EFFECT
+
+  //
 
   function scrollToComponent(ref) {
     if (ref.current) {
@@ -203,7 +208,7 @@ function App() {
             className="Grid-Item"
             href="https://rjlstudios.github.io/react-beatstore/"
           >
-            <img className="Card-Img" src={luna} loading="lazy"></img>
+            <img className="Card-Img"  src={luna} ></img>
             <div className="Card-Content">
           
               <div className="Card-Title">BEATSTORE</div>
@@ -224,8 +229,9 @@ function App() {
             </div>
           </a>
 
-          <div
+          <a
             className="Grid-Item"
+            href='https://rjlstudios.github.io/KNEW98/'
           >
             <img className="Card-Img" src={knew98} loading="lazy"></img>
             <div className="Card-Content">
@@ -238,10 +244,10 @@ function App() {
                   <li className=' Inverse'>2024</li>
                    </ul>
 
-                  <div className="Visit">COMING SOON </div>
+                  <div className="Visit hover-underline-animation">VISIT</div>
               </div>
             </div>
-          </div>
+          </a>
         </motion.div>
       </div>
 

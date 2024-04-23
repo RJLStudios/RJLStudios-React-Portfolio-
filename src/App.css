@@ -869,7 +869,7 @@ height: 55px;
   border: 2px solid black;
 }
 
-li:hover {
+.Projects-btn:hover, .Contact-btn:hover {
   cursor: pointer;
   color: gray;
 }
