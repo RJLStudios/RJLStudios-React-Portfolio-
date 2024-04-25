@@ -3,7 +3,6 @@ import "./App.css";
 import emailjs from "@emailjs/browser";
 /*import CTO from './Components/CTO';*/
 import Skills from "./Components/Skills";
-import About from "./Components/About";
 import WarpEffect from './Components/WarpEffect'; 
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import "animate.css";
@@ -179,7 +178,6 @@ function App() {
         </motion.div>
       </div>
 
-      <About />
 
       <div className="Projects" ref={projectRef}>
       <div className='Text-Wrapper-Overflow'>
