@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/RJLStudios-React-Portfolio-/static/css/main.addd8796.css",
-    "main.js": "/RJLStudios-React-Portfolio-/static/js/main.244a611d.js",
+    "main.css": "/RJLStudios-React-Portfolio-/static/css/main.af39d00a.css",
+    "main.js": "/RJLStudios-React-Portfolio-/static/js/main.0f37b224.js",
     "static/media/ProdLuna.jpeg": "/RJLStudios-React-Portfolio-/static/media/ProdLuna.c02111510d42b0862743.jpeg",
     "static/media/KNEW9814.04.jpg": "/RJLStudios-React-Portfolio-/static/media/KNEW9814.04.61ef9198b2a3040a86e9.jpg",
     "static/media/PPPLAYGROUND-MEDIUM.OTF": "/RJLStudios-React-Portfolio-/static/media/PPPLAYGROUND-MEDIUM.f1f4de779274a2ec53bc.OTF",
     "static/media/PPEDITORIALNEW-ITALIC.OTF": "/RJLStudios-React-Portfolio-/static/media/PPEDITORIALNEW-ITALIC.af4cfa74e6e233f04fe4.OTF",
     "static/media/PPEDITORIALNEW-REGULAR.OTF": "/RJLStudios-React-Portfolio-/static/media/PPEDITORIALNEW-REGULAR.24324615e0712f34dfb4.OTF",
     "index.html": "/RJLStudios-React-Portfolio-/index.html",
-    "main.addd8796.css.map": "/RJLStudios-React-Portfolio-/static/css/main.addd8796.css.map",
-    "main.244a611d.js.map": "/RJLStudios-React-Portfolio-/static/js/main.244a611d.js.map"
+    "main.af39d00a.css.map": "/RJLStudios-React-Portfolio-/static/css/main.af39d00a.css.map",
+    "main.0f37b224.js.map": "/RJLStudios-React-Portfolio-/static/js/main.0f37b224.js.map"
   },
   "entrypoints": [
-    "static/css/main.addd8796.css",
-    "static/js/main.244a611d.js"
+    "static/css/main.af39d00a.css",
+    "static/js/main.0f37b224.js"
   ]
 }
