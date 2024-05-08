@@ -24,6 +24,12 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <style>
+    #grain {
+      pointer-events: none;
+    }
+    </style>
+
     <title>RJLStudios</title>
   </head>
   <body>
@@ -39,5 +45,19 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="https://cdn.jsdelivr.net/npm/grained@0.0.2/grained.min.js"></script>
+    <script>
+      var options = {
+        animate: true,
+        patternWidth: 100,
+        patternHeight: 100,
+        grainOpacity: 0.05,
+        grainDensity: 1,
+        grainWidth: 1,
+        grainHeight: 1
+      };
+      
+      grained("#grain", options);
+      </script>
   </body>
 </html>

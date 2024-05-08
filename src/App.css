@@ -6,7 +6,8 @@
 }
 
 html{
-  background-color: black;
+  background-color:rgb(25, 25, 25);
+
   overflow-Y: auto;
   color: var(--primary-cream);
 }
@@ -16,8 +17,10 @@ body{
 }
 /*COLOR STYLES*/
 :root {
-  --primary-cream:#ece7ca;
+  --primary-cream:#f1edd9;
 }
+
+
 
 /*FONT STYLES*/
 /*
@@ -45,34 +48,53 @@ body{
 } 
 */
 
+@font-face {
+  font-family: 'Primary';
+  src: url('./fonts/PPEDITORIALNEW-REGULAR.OTF') format('opentype');
+} 
+
+@font-face {
+font-family: 'Italic';
+src: url('./fonts/PPEDITORIALNEW-ITALIC.OTF') format('opentype');
+}
+
+
+@font-face {
+font-family: 'Caligraphy';
+src: url('./fonts/PPPLAYGROUND-MEDIUM.OTF') format('opentype');
+}
+
+
 
 /*HEADER STYLES*/
 
 .Navbar {
   display: flex;
-  height: 70px;
+  height: 10vh;
   align-items: center;
-  padding: 0px 1em;
-  background-color: black;
+  justify-content: space-between;
+  padding: 0em 1.5vw;
   opacity: 80%;
   color: var(--primary-cream);
   width: 100%;
+  top: 0;
   position: fixed;
   z-index: 3;
 
 }
 
 .Header-links {
-  display: flex;
+ display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: space-between;
   width: fit-content;
-  gap: 1.1em;
+  gap: 1em;
   list-style-type: none;
-  letter-spacing: 2px;
-  font-size: 0.8rem;
-  margin-left: auto;
-  height: 10vh;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+  
+
+
 }
 
 .hover-underline-animation {
@@ -106,131 +128,161 @@ body{
   border-radius: 8px;
 }
 
+.Status {
+  font-size: 0.7rem;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width:900px) {
+  .Status {
+    display: none;
+
+  }
+}
+
 .Logo {
-font-weight: 300;
-font-size: 1.2rem;
+font-weight: 800;
+font-size: 1.4rem;
+font-family: 'primary';
+font-weight: 400;
 }
 
 
 
 /*HOME SECTION STYLES*/
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: var(--primary-cream);
-}
 
 .Homepage {
-  background-color: black;
   color: var(--primary-cream);
   width: 100%;
   display: flex;
-  align-items: space-around;
   height: 100vh;
-  justify-content: center;
   flex-direction: column;
-  color: var(--primary-cream);
-  padding: 0em 1em;
+ 
+  
 }
 
 
-.Intro-text {
+
+.Homepage-Content {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-  padding: 30px 15px;
-min-height: 90vh;
-min-width: 100%;
+  align-content: center;
+  margin-bottom: 10vh;
 }
 
-.Intro-H1 {
-  font-size: 5.8em;
-  font-weight: 500;
-  font-family: 'Georgia', Times, 'Times New Roman', serif;
-  font-style: Italic;
-}
-
-.FadeUp{
-  animation:fadeInUp 1s ease backwards;}
-
-  .FadeUp1{
-    animation:fadeInUp1 1s ease backwards;}
-
-    .FadeUp2{
-      animation:fadeInUp2 1s ease backwards;}
+.Homepage-Content-Wrapper {
   
-
-.Delay1 {
-transition-delay: 5s;
-}
-
-.Delay2 {
-  transition-delay: 20s,
-}
-
-@keyframes fadeInUp{
-  0%{transform:translate(0px, 300px); opacity: 0;}
-  100%{transform:translate(0px, 0); opacity: 1;}
-}
-
-@keyframes fadeInUp1{
-  0%{transform:translate(0px, 100px); opacity: 0;}
-  100%{transform:translate(0px, 0); opacity: 1;}
-}
-
-@keyframes fadeInUp2{
-  0%{transform:translate(0px, 150px); opacity: 0;}
-  100%{transform:translate(0px, 0); opacity: 1;}
-}
-
-
-.Intro-P {
-  font-size: 1.5rem;
-  font-weight: 100;
-  padding-top: 12px;
-  width: 320px;
+  height: fit-content;
+  width:fit-content;
   margin: auto;
-  
+}
+.Name, .Designer, .Web-Dev {
+  height: 1.2em;
+  width: 100%;
 }
 
-.Opaque {
-  font-size: 1.4rem;
-  opacity: 70%;
+.Name {
+  padding-top: 0.15em;
+  font-size: 6rem;
+  font-family: 'Primary';
+  letter-spacing: -1px;
+}
+
+.Calig {
+  font-size: 7rem;
+  font-family: 'Caligraphy';
+}
+
+.Designer {
+  font-size: 4.5rem;
+  font-family: 'Italic';
+  display: flex;
+}
+
+.And {
+  height: fit-content;
+  width: fit-content;
+  font-size: 1.9rem;
+  font-weight: 100;
+  text-decoration: underline;
+  margin-left: 0.5em;
+ 
+}
+
+.Designer-div {
+width:fit-content;
+display: flex;
+height: fit-content;
+padding-top: 20px;
+}
+
+
+.Webflow {
+  font-size: 0.7rem;
+  height: fit-content;
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: -1em;
   letter-spacing: 1px;
-  margin-top: 20px;
-  --animate-duration:1.5s;
-  font-weight: 400;
+  font-weight: 200;
 }
 
+
+.Web-Dev {
+  font-family: 'Primary';
+  font-size: 5.2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .Homepage-Content {
+  
+   
+  }
+
+  .Homepage-Content-Wrapper {
+   
+  }
+
+  .Name {
+    font-size: 4.5rem;
+    text-align: center;
+  }
+
+  .Web-Dev {
+    font-size: 4.2rem;
+  }
+}
 
 .Intro-links {
   display: flex;
   font-size: 25px;
   gap: 15px;
   height: fit-content;
-  margin: 0em 0.2em;
   align-content: center;
   justify-content: space-between;
+  padding: 0em 1.5vw;
 }
 
 .Link-A {
-  font-size: 16px;
+  font-size: 0.7rem;
   padding: 10px;
-  margin-bottom: auto 0;
+  margin:auto 0em;
   border: 1px solid var(--primary-cream);
   border-radius: 20px;
-  background-color: black;
+  background-color: rgb(25,25,25);
   color: var(--primary-cream);
   transition: 400ms;
+  margin-bottom: 1vh;
 }
 
 .Social-Wrapper {
  height: 100%;
  width: fit-content;
  display: flex;
+ justify-content: center;
  align-items: center;
  gap: 10px;
 }
@@ -265,188 +317,6 @@ top: 0;
 }
 /* ABOUT SECTION*/
 
-.About {
-  display: flex;
-  width: 100%;
-  height: 150vh;
-  padding: 5em 2em;
-}
-
-.About-Wrapper {
-  width: 100%;
-  height: 100%;
-  padding: 1em;
-  display: flex;
-  flex-direction: row;
-}
-
-
-.Content-Wrapper {
-  height: fit-content;
-  padding: 1em;
-  display: flex;
-  width: 45em;
-  align-items: center;
-}
-
-
-.About-Carousel {
-  height: 100%;
-  padding: 1em;
-  display: flex;
-  flex-direction: row;
-  width: inherit;
-}
-
-.Text-Wrapper-Overflow {
-  overflow: hidden;
-  max-height: fit-content;
-}
-
-.Intro-Text {
-  font-size: 2.3rem;
-  font-weight: 500;
-  font-family: 'Georgia', Times, 'Times New Roman', serif;
-  font-style: Italic;
-  margin: 0;
-  transition: 1s ease;
-  padding-bottom: 0.5em ;
-}
-
-
-.Content-Text {
-  font-weight: 300;
-  font-size: 1.45rem ;
-  letter-spacing: 0.5px;
-}
-
-.Text-Bio {
-
-max-height: fit-content;
-}
-
-.Text-Span {
-  padding-right: 12em;
-}
-
-.Spacer {
-  padding-top: 1em;
-}
-
-.Wrap {
-  overflow: hidden;
-  height: fit-content;
-  width: fit-content;
-}
-
-.About-Me {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-height: 2.5em;
-width: 55vw;
-font-size: 5rem;
-z-index: 2;
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-style: italic;
-padding-bottom: 40px;
-}
-
-
-@media screen and (max-width:400px){
-  .About-Me {
-font-size: 2em;
-  }
-
-  .Projects-Title {
-    margin: 0 auto;
-  }
-
-}
-
-.About-Img {
-  width: auto;
-  height: auto;
-margin: auto 0;
-max-width: 35em;
-max-height: 32em;
-border-radius: 10px;
-}
-
-@media screen and (max-width:800px){
-  .About {
-height: fit-content;
-  }
-
-.Intro-H1{
-  font-size: 3.5rem;
-}
-
-  .About-Wrapper { 
-    flex-direction: column;
-    height: fit-content;
-  }
-
-  .Content-Wrapper {
-    padding: 4em 0em;
-    height: fit-content;
-   
-  }
-
-  .Content-Wrapper, .About-Carousel {
-     width: 100%;
-  }
-  
-.Span {
-
-}
-.Content-Wrapper {
-  align-items: start;
-}
-
-  .Content-Text {
-    width: 100%;
-    padding: 0px;
-  }
-  
-  .About-Carousel {
-    display: none;
-  } 
-
-
-}
-
-@media screen and (min-width:900px){
-  .About {
-    max-height: 850px;
-      }
-
-}
-
-@media screen and (min-width:1000px) {
- .About {
-  max-width: 1300px;
-  margin: 0px auto;  
-  display: none;
-
-  
-  
- } 
-}
-
-@media screen and (min-width:1300px) {
-  .Projects-Title {
-    font-size: 1em;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-  }
-}
-
-
-
-
-
 
 /*PROJECTS SECTION*/
 
@@ -457,19 +327,19 @@ height: fit-content;
   justify-content: center;
   min-width: 100%;
   height: 100vh fit-content;
-  background-color: black;
   color: white;
-  padding: 0em 1.5em;
+  padding: 2em 1.5em;
+
 }
 
 .Projects-Title{
   width: 100%;
   font-size: 4rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-style: italic;
+  font-family:'primary';
   color: var(--primary-cream);
   width: 100%;
   margin: 1em 0em 0.5em 0em;
+  font-weight: 100;
 }
 
 
@@ -498,13 +368,24 @@ width: 48%;
 transition: 300ms;
 }
 
+.Image-Wrapper {
+  width: 100%;
+  aspect-ratio: 4/2;
+  border-radius: 10px;
+  margin: auto;
+  overflow: hidden;
+}
 
-.Card-Img {
+.Image-Wrapper > .Card-Img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
   margin: auto;
+}
+
+.Card-Img:hover {
+cursor: pointer;
 }
 
 .Card-Content {
@@ -519,12 +400,13 @@ flex-direction: column;
 
 .Card-Title {
   height: fit-content;
-  padding: 0.2em 0em 0.35em 0em;
+  padding: 0.3em 0em 0.2em 0em;
   display: flex;
   font-size: 2.3rem;
   color: var(--primary-cream);
-  font-weight: 400;
-  letter-spacing: 1px;
+  
+  letter-spacing: 0.5px;
+  font-family: 'Arial';
 
   
 }
@@ -644,7 +526,6 @@ border-radius: 10px 10px 0px 0px;
   width: 100%;
   height: 120PX;
   margin: 1em 0em;
-  background-color: black;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -685,7 +566,7 @@ font-size: 5rem;
 /*CTO STYLES*/
 .CTO {
 color: var(--primary-cream);
-background-color: black;
+
 display: flex;
 height: 100vh fit-content;
 justify-content: center;
@@ -710,15 +591,16 @@ padding: 0.5rem 1rem;
   font-weight: 300;
   color: var(--primary-cream);
   width: 100%;
-  font-family:  Georgia, 'Times New Roman', Times, serif;
-  font-style: italic;
+  font-family: 'Italic';
+
 
 }
 
 .CTO-Para {
 font-size: 1.15rem;
 line-height: 1.75em;
-font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+letter-spacing: 0.5px;
+font-family:'Primary';
 width: 350px;
 margin: 0 auto;
 }
@@ -750,7 +632,7 @@ justify-content: center;
   border-top: none;
   border-right: none;
   border-left: none;
-  background-color: black;
+  background-color: rgb(25, 25, 25);
   color: var(--primary-cream);
   font-size: 1.1rem;
 }
@@ -796,7 +678,7 @@ height: 70px;
 width: 100%;
 color: white;
 justify-content: center;
-background-color: black;
+
 color: var(--primary-cream);
 
 }
@@ -888,13 +770,6 @@ height: 55px;
 /*RESPONSIVE MEDIA RULES*/
 
 
-
-.Intro-text {
- 
-  max-width: 700px;
-  padding: 10px 0px;
-}
-
 .Input-field {
   width: 100%;
   height: 65%;
@@ -911,11 +786,6 @@ height: 55px;
 
 @media screen and (max-width:800px){
 
-  .Homepage {
-    padding: 60px 0px;
-    min-height: 100vh;
-    
-  }
   .Header-links {
     display: flex;
     justify-content: center;
@@ -924,9 +794,8 @@ height: 55px;
     gap: 1em;
     list-style-type: none;
     letter-spacing: 2px;
-    font-size: 0.8rem;
+ 
     margin-left: auto;
-    
   
   }
   

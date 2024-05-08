@@ -1,72 +1,89 @@
-import React from 'react';
+import {React, useRef, useInView, useAnimation, useEffect} from 'react';
+import { motion} from "framer-motion";
+  import luna from "../Images/ProdLuna.jpeg";
+import knew98 from "../Images/KNEW9814.04.jpg";
 
 function Projects() {
+    const animateRef = useRef(null);
+  const isInView = useInView(animateRef, { once: true });
+  const mainControls = useAnimation();
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    }
+  }, [isInView]);
     return(
-        <div className='Projects'>
-            <div className='Projects-Title'>
-                <h2 className='Projects-Header'>Projects</h2>
 
-            </div>
-            <div className='Projects-Wrapper'>
-            <div className='Projects-Grid'>
-
-                <div className='Grid-Item'>
-                    <div className='Card'>
-                      
-                        <div className='Card-Img'>
-                            <img className='Project-SC' src='https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.png'></img>
-                        </div>
-                        
-                        <div className='Card-Content'>
-                            <h1 class='Card-Header'>Portfolio App</h1>
-                            <p class='Card-Bio'>A virtual resume for all current work. You may already be looking at this project!
-                            </p>
-                            <div class='Btn-Wrapper'>
-                             <a href='https://github.com/RJLStudios/RJLStudios-React-Portfolio-' target='_blank'><button class='Src-Btn'>Source Code</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='Grid-Item'>
-                    <div className='Card'>
-                        <div className='Card-Img'>
-                            <img className='Project-SC' src='https://s3-alpha.figma.com/hub/file/2477810093/c41260d4-7e79-44cf-b759-411368380fa0-cover.png'></img>
-                        </div>
-                        <div className='Card-Content'>
-                            <h1 class='Card-Header'>Weather App</h1>
-                            <p class='Card-Bio'>A weather app utilising the OpenWeatherMap API to fetch data using query search.</p>
-                            <div class='Btn-Wrapper'>
-                            <a href='https://rjlstudios.github.io/Weather-App/' target='_blank'><button class='Card-Btn'>Visit</button></a>
-                            <a href='https://github.com/RJLStudios/Weather-App' target='_blank'><button class='Src-Btn'>Source Code</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div className="Projects">
+        <div className='Text-Wrapper-Overflow'>
+        <motion.div 
+           variants={{
+            hidden: { opacity: 0, y: 75 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          initial="hidden"
+          animate={mainControls}
+          transition={{ duration: 0.5, delay: 0.15 }}
+        className="Projects-Title">PROJECTS.</motion.div></div>
+          <motion.div
+          ref={animateRef}
+                      variants={{
+                        hidden: { opacity: 0, y: 75 },
+                        visible: { opacity: 1, y: 0 },
+                      }}
+                      initial="hidden"
+                      animate={mainControls}
+                      transition={{ duration: 0.5, delay: 0.35 }}
+            className="Projects-Grid Snaps-Inline"
+          >
+  
+            <a
+              className="Grid-Item"
+              href="https://rjlstudios.github.io/react-beatstore/"
+            >
+              <img className="Card-Img"  src={luna} ></img>
+              <div className="Card-Content">
             
-
-                <div className='Grid-Item'>
-                    <div className='Card'>
-                        <div className='Card-Img'>
-                            <img className='Project-SC' src='https://www.thetechedvocate.org/wp-content/uploads/2023/05/create-music-streaming-app-like-Spotify.png'></img>
-                        </div>
-                        <div className='Card-Content'>
-                            <h1 class='Card-Header'>Spotify Player</h1>
-                            <p class='Card-Bio'>A spotify app  created and curated by my playlists, with plans to utilise the Spotify API.</p>
-                            <div class='Btn-Wrapper'>
-                             <a href='https://rjlstudios.github.io/Spotify-Clone/' target='_blank'><button class='Card-Btn'>Visit</button></a>
-                             <a href='https://github.com/RJLStudios/Spotify-Clone' target='_blank'><button class='Src-Btn'>Source Code</button></a>
-                            </div>
-                        </div>
-                    </div>
+                <div className="Card-Title">BEATSTORE</div>
+  
+                <div className="Sml-Info-Wrapper">
+                  <ul className="Card-Info">
+                    <li className='Info-Tag'>MUSIC</li>
+                    <li className='Info-Tag'>E-COMMERCE</li>  
+                    <li className='Inverse'>2023</li>
+                    </ul>
+                  <a
+                    className="Project-Link"
+                    href="https://rjlstudios.github.io/react-beatstore/"
+                  >
+                    <div className="Visit hover-underline-animation"> VISIT</div>
+                  </a>
                 </div>
-
-                
-            </div>
-            </div>
-            
-
+              </div>
+            </a>
+  
+            <a
+              className="Grid-Item"
+              href='https://rjlstudios.github.io/KNEW98/'
+            >
+              <img className="Card-Img" src={knew98} loading="lazy"></img>
+              <div className="Card-Content">
+      
+                <div className="Card-Title">KNEW 98 WEBSITE</div>
+                <div className="Sml-Info-Wrapper">
+                  <ul className="Card-Info">
+                    <li className='Info-Tag'>MUSIC</li>
+                    <li className='Info-Tag'>E-COMMERCE</li> 
+                    <li className=' Inverse'>2024</li>
+                     </ul>
+  
+                    <div className="Visit hover-underline-animation">VISIT</div>
+                </div>
+              </div>
+            </a>
+          </motion.div>
         </div>
+  
     )
 }
 

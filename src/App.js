@@ -1,29 +1,28 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect} from "react";
 import "./App.css";
 import emailjs from "@emailjs/browser";
-/*import CTO from './Components/CTO';*/
 import Skills from "./Components/Skills";
-import WarpEffect from './Components/WarpEffect'; 
+
+
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import "animate.css";
+
 import {
   motion,
-  useTransform,
-  useScroll,
   useInView,
   useAnimation,
 } from "framer-motion";
 import luna from "./Images/ProdLuna.jpeg";
 import knew98 from "./Images/KNEW9814.04.jpg";
-import { useEffect } from "react";
+
+
 
 function App() {
   const homeRef = useRef(null);
   const projectRef = useRef(null);
   const ctoRef = useRef(null);
 
-  //IMAGE WARP EFFECT
-
+  //GRAINED BACKGROUND EFFECT
+ 
   //
 
   function scrollToComponent(ref) {
@@ -88,7 +87,10 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App" id='grain'>
+   <div className="Homepage" id="Homepage">
+    <div className="Homepage-Content">
+<svg></svg>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
@@ -100,7 +102,9 @@ function App() {
         className="Navbar "
         ref={homeRef}
       >
-        <h3 className="Logo">RJLStudios</h3>
+        <h3 className="Logo">rjlstudios</h3>
+
+        <div className='Status'>CREATING DIGITAL EXPERIENCES</div>
 
         <ul className="Header-links">
           <li
@@ -117,66 +121,60 @@ function App() {
           </li>
         </ul>
 
-        <div className="Header-progress">
-          <div className="Progress-circle"></div>
-        </div>
       </motion.div>
 
-      <div className="Homepage" id="Homepage">
-        <div className="Intro-text ">
-          <motion.div
-            variants={{
-              hidden: { opacity: 0, y: 75 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            initial="hidden"
-            animate='visible'
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="Text-Wrapper
-"
-          >
-            <p className="Intro-P Opaque "></p>
 
-            <div className=" Intro-H1">Richard Kelly</div>
+  <motion.div
+    variants={{
+      hidden: { opacity: 0, y: 75 },
+      visible: { opacity: 1, y: 0 },
+    }}
+    initial="hidden"
+    animate='visible'
+    transition={{ duration: 0.5, delay: 0.4 }}
+    className="Homepage-Content"
+  >
+    <div className="Homepage-Content-Wrapper">
+    <div className='Name'>richard kelly</div>
+    <div className='Designer'><span className='Calig'>D</span><span className='Designer-div'>esigner</span><span className='And'>and</span></div>
+    <div className='Webflow'>WEBFLOW</div>
+    <div className='Web-Dev'>web developer</div>
+    </div>
 
-            <h1 className="Intro-H1">Creative Developer</h1>
+  </motion.div>
 
-            <p className="Intro-P">
-              Combining passions to create beautiful and engaging digital
-              experiences in London, United Kingdom.
-            </p>
-          </motion.div>
-        </div>
-        
-        <motion.div
-          variants={{
-            hidden: { opacity: 0, y: 75 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial="hidden"
-          animate='visible'
-          transition={{ duration: 0.5, delay: 0.6 }}
-          className="Intro-links"
-        >
-          <div className="Social-Wrapper">
-            <a href="https://github.com/RJLStudios" className="Social">
-              <FaGithub />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/richard-kelly-764602156/"
-              className="Social"
-            >
-              <FaLinkedinIn />
-            </a>
-          </div>
 
-          <a href>
-            <button className="Link-A" onClick={cvButtonDL}>
-              View Resume
-            </button>
-          </a>
-        </motion.div>
-      </div>
+<motion.div
+  variants={{
+    hidden: { opacity: 0, y: 75 },
+    visible: { opacity: 1, y: 0 },
+  }}
+  initial="hidden"
+  animate='visible'
+  transition={{ duration: 0.5, delay: 0.6 }}
+  className="Intro-links"
+>
+  <div className="Social-Wrapper">
+    <a href="https://github.com/RJLStudios" className="Social">
+      <FaGithub />
+    </a>
+    <a
+      href="https://www.linkedin.com/in/richard-kelly-764602156/"
+      className="Social"
+    >
+      <FaLinkedinIn />
+    </a>
+  </div>
+
+  <a href>
+    <button className="Link-A" onClick={cvButtonDL}>
+      VIEW RESUME
+    </button>
+  </a>
+</motion.div>
+</div>
+</div>
+
 
 
       <div className="Projects" ref={projectRef}>
@@ -189,7 +187,7 @@ function App() {
         initial="hidden"
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.15 }}
-      className="Projects-Title">PROJECTS.</motion.div></div>
+      className="Projects-Title">projects</motion.div></div>
         <motion.div
         ref={animateRef}
                     variants={{
@@ -202,14 +200,17 @@ function App() {
           className="Projects-Grid Snaps-Inline"
         >
 
-          <a
+          <div
             className="Grid-Item"
+            id="Grid-Item"
             href="https://rjlstudios.github.io/react-beatstore/"
           >
+            <div className='Image-Wrapper'>
             <img className="Card-Img"  src={luna} ></img>
+            </div>
             <div className="Card-Content">
           
-              <div className="Card-Title">BEATSTORE</div>
+              <div className="Card-Title">Beatstore</div>
 
               <div className="Sml-Info-Wrapper">
                 <ul className="Card-Info">
@@ -225,16 +226,18 @@ function App() {
                 </a>
               </div>
             </div>
-          </a>
+          </div>
 
           <a
             className="Grid-Item"
             href='https://rjlstudios.github.io/KNEW98/'
           >
+               <div className='Image-Wrapper'>
             <img className="Card-Img" src={knew98} loading="lazy"></img>
+            </div>
             <div className="Card-Content">
     
-              <div className="Card-Title">KNEW 98 WEBSITE</div>
+              <div className="Card-Title">98' Musician Website</div>
               <div className="Sml-Info-Wrapper">
                 <ul className="Card-Info">
                   <li className='Info-Tag'>MUSIC</li>
