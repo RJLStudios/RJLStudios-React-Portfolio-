@@ -87,7 +87,7 @@ function App() {
   };
 
   return (
-    <div className="App" id='grain'>
+    <div className="App" >
    <div className="Homepage" id="Homepage">
     <div className="Homepage-Content">
 <svg></svg>
