@@ -176,6 +176,7 @@ font-weight: 400;
   height: fit-content;
   width:fit-content;
   margin: auto;
+
 }
 .Name, .Designer, .Web-Dev {
   height: 1.2em;
@@ -184,18 +185,18 @@ font-weight: 400;
 
 .Name {
   padding-top: 0.15em;
-  font-size: 6rem;
+  font-size: 8rem;
   font-family: 'Primary';
   letter-spacing: -1px;
 }
 
 .Calig {
-  font-size: 7rem;
+  font-size: 8rem;
   font-family: 'Caligraphy';
 }
 
 .Designer {
-  font-size: 4.5rem;
+  font-size: 5rem;
   font-family: 'Italic';
   display: flex;
 }
@@ -203,7 +204,7 @@ font-weight: 400;
 .And {
   height: fit-content;
   width: fit-content;
-  font-size: 1.9rem;
+  font-size: 2rem;
   font-weight: 100;
   text-decoration: underline;
   margin-left: 0.5em;
@@ -219,19 +220,20 @@ padding-top: 20px;
 
 
 .Webflow {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   height: fit-content;
   width: 100%;
   margin-top: 2em;
-  margin-bottom: -1.8em;
+  margin-bottom: -2.8em;
   letter-spacing: 1px;
   font-weight: 200;
 }
 
 
 .Web-Dev {
+  text-align: center;
   font-family: 'Primary';
-  font-size: 5.2rem;
+  font-size: 7rem;
 }
 
 
@@ -258,7 +260,7 @@ padding-top: 20px;
 }
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1300px) {
 
   .Designer-div {
     width:fit-content;
