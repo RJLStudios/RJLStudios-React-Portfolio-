@@ -87,10 +87,8 @@ function App() {
   };
 
   return (
-    <div className="App" >
+    <div className="App">
    <div className="Homepage" id="Homepage">
-    <div className="Homepage-Content">
-<svg></svg>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
@@ -124,24 +122,14 @@ function App() {
       </motion.div>
 
 
-  <motion.div
-    variants={{
-      hidden: { opacity: 0, y: 75 },
-      visible: { opacity: 1, y: 0 },
-    }}
-    initial="hidden"
-    animate='visible'
-    transition={{ duration: 0.5, delay: 0.4 }}
-    className="Homepage-Content"
-  >
     <div className="Homepage-Content-Wrapper">
     <div className='Name'>richard kelly</div>
-    <div className='Designer'><span className='Calig'>D</span><span className='Designer-div'>esigner</span><span className='And'>and</span></div>
+    <div className='Designer'><span className='Designer-div'>designer</span><span className='And'>&</span></div>
     <div className='Webflow'>WEBFLOW</div>
     <div className='Web-Dev'>web developer</div>
     </div>
 
-  </motion.div>
+
 
 
 <motion.div
@@ -166,13 +154,12 @@ function App() {
     </a>
   </div>
 
-  <a href>
+
     <button className="Link-A" onClick={cvButtonDL}>
       VIEW RESUME
     </button>
-  </a>
+ 
 </motion.div>
-</div>
 </div>
 
 
@@ -200,7 +187,7 @@ function App() {
           className="Projects-Grid Snaps-Inline"
         >
 
-          <div
+          <a
             className="Grid-Item"
             id="Grid-Item"
             href="https://rjlstudios.github.io/react-beatstore/"
@@ -226,7 +213,7 @@ function App() {
                 </a>
               </div>
             </div>
-          </div>
+          </a>
 
           <a
             className="Grid-Item"
